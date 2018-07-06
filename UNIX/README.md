@@ -1,5 +1,7 @@
 ## The UNIX environment
 
+----
+
 ### Setting up! 
 
 In Bioinformatics, UNIX is the preferred operating environment: nearly all available software is written for UNIX.
@@ -15,3 +17,4 @@ Users with earlier versions of windows need to configure a [virtual machine.](ht
 - For Windows, use [winSCP](https://winscp.net/eng/download.php)
 - For Mac & Linux, use [CyberDuck](https://cyberduck.io)
 
+----
