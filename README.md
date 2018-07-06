@@ -1,4 +1,5 @@
-## Algal Genetics; Shantou University - Summer 2018
+# Algal Genetics 
+#### Shantou University - Summer 2018
 
 ----
 
