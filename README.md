@@ -17,7 +17,7 @@ Genome vs Transcriptome, Intron vs Exon. How do we identify open reading frames?
 #### 4. [Identification: BLAST!]()
 What genes are being transcribed? Why S. Altschull is the most cited biologist ever. Preparing a BLAST database and running the software. 
 
-#### 5. [Phylogenetic Trees]()
+#### 5. [Phylogenetics]()
 Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs. 
 
 
