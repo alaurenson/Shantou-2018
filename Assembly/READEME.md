@@ -29,9 +29,10 @@ For JRE/JDK, if installed you'll see the 'help' page in your terminal. If not, y
 
 If you're missing any of them, please follow the above links and install them!
 
-#### Now that we have all of our dependencies installed, we'll download the programs that actually perform the analysis and assembly. 
+Now that we have all of our dependencies installed, we'll download the programs that actually perform the analysis and assembly. 
 
-- For Windows, use [winSCP](https://winscp.net/eng/download.php)
-- For Mac & Linux, use [CyberDuck](https://cyberduck.io)
+- To obtain reports about the quality of our sequence data: [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+- To clean up our raw data prior to assembly: [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic)
+- To assemble our cleaned-up data: [RNAspades](http://cab.spbu.ru/software/rnaspades/)
 
 ----
