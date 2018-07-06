@@ -12,7 +12,7 @@ Now that we've built assemblies, it's time to identify 'Open Reading Frames' (OR
 
 ----
 
-## Running TransDecoder
+## Running TransDecoder - Generalized Procedure
 Basic steps, from the TransDecoder wiki:
 
 ### Predicting coding regions from a transcript fasta file 
