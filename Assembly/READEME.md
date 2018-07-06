@@ -13,8 +13,10 @@ The first step in many bioinformatic pipelines is to assemble your raw sequencer
 
 To check whether you have them:
 ```
-# For Python, you'll notice the command line change from bash's '$' to Python's '>>>'. Type quit() to exit the Python prompt.
+# For Python, you'll notice the command line change from bash's '$' to Python's '>>>'. 
 $ python
+
+# Type quit() to exit the Python prompt.
 >>> quit()
 ```
 ```
