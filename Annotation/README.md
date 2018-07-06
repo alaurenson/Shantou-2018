@@ -11,12 +11,9 @@ Now that we've built assemblies, it's time to identify 'Open Reading Frames' (OR
 - Download this file: ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
 
 ----
-----
 
 ## Running TransDecoder
 Basic steps, from the TransDecoder wiki:
-
------
 
 ### Predicting coding regions from a transcript fasta file 
 
