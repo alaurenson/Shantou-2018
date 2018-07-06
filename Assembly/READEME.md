@@ -1,6 +1,6 @@
 ## Assembly
 
-The first step in many bioinformatic pipelines is to assemble your raw sequencer output into workable data. 
+The first step in many bioinformatic pipelines is to assemble your raw sequencer output into workable data. We'll begin by obtaining all of the necessary software.
 
 ----
 
