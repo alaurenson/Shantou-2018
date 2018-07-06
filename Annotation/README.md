@@ -23,7 +23,7 @@ The 'TransDecoder' utility is run on a fasta file containing the target transcri
     
     TransDecoder.LongOrfs -t target_transcripts.fasta
 
->By default, TransDecoder.LongOrfs will identify ORFs that are at least 100 amino acids long. You can lower this via the '-m' parameter, but know that the rate of false positive ORF predictions increases drastically with shorter minimum length criteria.
+By default, TransDecoder.LongOrfs will identify ORFs that are at least 100 amino acids long. You can lower this via the '-m' parameter, but know that the rate of false positive ORF predictions increases drastically with shorter minimum length criteria.
 
 
 #### Step 2: (optional)
