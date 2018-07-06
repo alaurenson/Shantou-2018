@@ -12,6 +12,6 @@ Users with earlier versions of windows need to configure a [virtual machine.](ht
 
 #### UNIX is generally used through your terminal. While in this class, one of our primary goals is to teach you to be comfortable working exclusivly via the terminal. That said, it can sometimes be useful to have a graphical user interface available for file exploration, especially when working on a remote server. 
 
-- [For Windows](https://winscp.net/eng/download.php)
-- [For Mac & Linux](https://cyberduck.io)
+- For Windows, use [winSCP](https://winscp.net/eng/download.php)
+- For Mac & Linux, use [CyberDuck](https://cyberduck.io)
 
