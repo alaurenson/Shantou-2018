@@ -40,20 +40,18 @@ Search the peptides for protein domains using Pfam. This requires [HMMER](http:/
 
 Just as with the blast search, if you have access to a computing grid, consider using [HPC GridRunner](https://github.com/HpcGridRunner/HpcGridRunner.github.io/releases).
 
-##### Integrating the Blast and Pfam search results into coding region selection 
+##### Integrating the Pfam search results into coding region selection 
 
-The outputs generated above can be leveraged by TransDecoder to ensure that those peptides with blast hits or domain hits are retained in the set of reported likely coding regions.  Run TransDecoder.Predict like so:
+The outputs generated above can be leveraged by TransDecoder to ensure that those peptides with domain hits are retained in the set of reported likely coding regions.  Run TransDecoder.Predict like so:
 
 
-    TransDecoder.Predict -t target_transcripts.fasta --retain_pfam_hits pfam.domtblout --retain_blastp_hits blastp.outfmt6
+    TransDecoder.Predict -t target_transcripts.fasta --retain_pfam_hits pfam.domtblout 
 
 The final coding region predictions will now include both those regions that have sequence characteristics consistent with coding regions in addition to those that have demonstrated blast homology or pfam domain content.
 
 #### Step 3: predict the likely coding regions
 
     TransDecoder.Predict -t target_transcripts.fasta [ homology options ]
-
-If the transcripts are oriented according to the sense strand, then include the -S flag to examine only the top strand.  Full usage info is below.
 
 The final set of candidate coding regions can be found as files '*.transdecoder.*' where extensions include .pep, .cds, .gff3, and .bed
 
