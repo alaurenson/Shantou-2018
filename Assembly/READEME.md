@@ -5,7 +5,7 @@ The first step in many bioinformatic pipelines is to assemble your raw sequencer
 ----
 
 ### Software & Dependencies  
-Most programs that we'll use rely on other software in order to run properly. You probably have some or all of them already. 
+#### Most programs that we'll use rely on other software in order to run properly. You probably have some or all of them already. 
  
 - [Python]()
 - [Java Runtime Environment (JRE)](https://www.java.com/en/)
@@ -29,7 +29,7 @@ For JRE/JDK, if installed you'll see the 'help' page in your terminal. If not, y
 
 If you're missing any of them, please follow the above links and install them!
 
-Now that we have all of our dependencies installed, we'll download the programs that actually perform the analysis and assembly. 
+#### Now that we have all of our dependencies installed, we'll download the programs that actually perform the analysis and assembly. 
 
 - To obtain reports about the quality of our sequence data: [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 - To clean up our raw data prior to assembly: [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic)
