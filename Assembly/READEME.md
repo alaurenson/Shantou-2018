@@ -13,20 +13,18 @@ The first step in many bioinformatic pipelines is to assemble your raw sequencer
 
 To check whether you have them:
 ```
-# 1. For Python
+# For Python, you'll notice the command line change from bash's '$' to Python's '>>>'. Type quit() to exit the Python prompt.
 $ python
 >>> quit()
-
-# 2. For JRE
+```
+```
+# For JRE/JDK, if installed you'll see the 'help' page in your terminal. If not, you'll see nothing happen.
+# JRE
 $ java -version
 
-# 3. For JDK
+# For JDK
 $ javac
 ```
-For Python, you'll notice the command line change from bash's '$' to Python's '>>>'. Type quit() to exit the Python prompt. 
-
-For JRE/JDK, if installed you'll see the 'help' page in your terminal. If not, you'll see nothing happen. 
-
 If you're missing any of them, please follow the above links and install them!
 
 #### Now that we have all of our dependencies installed, we'll download the programs that actually perform the analysis and assembly. 
