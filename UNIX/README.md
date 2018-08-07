@@ -51,9 +51,13 @@ To be fair, there are many such languages available (the major one being Anacond
 
 ----
 
-### Other resources and further reading
+### Some other resources
 
+1. [The Bash Guide](https://guide.bash.academy): this is an extremely well-written and thorough guide to the intricacies of Bash. Well-worth your time if you want to pursue this sort of work.  
 
+2. [Bioinformatic one-liners](https://github.com/stephenturner/oneliners#etc) compiled by Stephen Turner. These are somewhat advanced compared to what we did today, but resemble the kinds of commands we'll use later in the course. 
+
+3. [UNIX commands for NGS data processing](http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/linux.html) written by U. Ijaz. A great cheat-sheet for UNIX commands, and specific commands for dealing with next-gen sequencing data. The exercises herein are very similar to the kind of work we're hoping to achieve in this course.
 
 
 
