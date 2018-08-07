@@ -39,17 +39,13 @@ Notice, the bash commands do exactly the same thing! It's just a different way o
 
 #### Now that we've downloaded the files, let's get started. We're going to work through the first several exercises together. My goal is to have us finish Part 1 today in class.
 
-> 1. Navigate (as you normally would) to the folder we just downloaded - go into "Unix_and_Perl_course", and open the pdf file "unix_and_perl_primer_v3.1.2.pdf"
+1. Navigate (as you normally would) to the folder we just downloaded - go into "Unix_and_Perl_course", and open the pdf file "unix_and_perl_primer_v3.1.2.pdf"
 
-> 2. Go to p.13, and follow exercises U1, U2, U3, and U4
+2. Go to p.13, and follow exercises U1, U2, U3, and U4 
 
-> 3. Because we downloaded the folder directly, our data isn't where exercise U5 says it is. 
+> Because we downloaded the folder directly, our data isn't where exercise U5 says it is. The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - **our file is located at /Desktop/bash_practice/Unix_and_Perl_course**. Going forward, you can follow the exercises without a problem if you remember where our file is! This is good practice for developing your directory awareness.
 
-The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - **our file is located at /Desktop/bash_practice/Unix_and_Perl_course**. 
-
-Going forward, you can follow the exercises without a problem, just remember where our file is! This is good practice for developing your directory awareness.
-
-Instead of U5, open a new terminal window and type the following:
+3. Instead of U5, open a new terminal window and type the following:
 ```
 # Change to the desired directory
 cd Desktop/bash_practice/Unix_and_Perl_course
@@ -61,7 +57,7 @@ ls
 pwd
 ```
 
-> 4. From here, we should be able to continue together from U6 onward - hopefully we can get to U36!
+4. From here, we should be able to continue together from U6 onward - hopefully we can get to U36!
 
 I realize there are a lot of commands to learn: don't worry about memorizing them - I promise that you will eventually learn them through use!
 
