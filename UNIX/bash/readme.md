@@ -4,7 +4,7 @@
 
 There are two ways you can download the files:
 
-1. Follow this link: [Unix and Perl Primer for Biologists - v3.1.2](http://korflab.ucdavis.edu/Unix_and_Perl/index.html). From there, scroll down to v3.1.2, and download "all course material". Unzip the file. 
+1. Follow this link: [Unix and Perl Primer for Biologists - v3.1.2](http://korflab.ucdavis.edu/Unix_and_Perl/index.html). From there, scroll down to v3.1.2, and download "all course material". Make a folder on your desktop called Shantou_2018, and place the download in there. Unzip the file. 
 
 2. If you want to jump right in, open a new terminal window and type the following to achieve the same thing:
 ```
@@ -16,10 +16,7 @@ There are two ways you can download the files:
 cd ~/Desktop
 
 # Make a directory called "Shantou_2018", and move into that directory
-mkdir Shantou_2018; cd Shantou_2018
-
-# Make a directory called "bash_practice", and move into that directory
-mkdir bash_practice; cd bash_practice 
+mkdir Shantou_2018; cd Shantou_2018 
 
 # Download "this" from the internet
 wget "http://korflab.ucdavis.edu/Unix_and_Perl/current.zip"
@@ -46,14 +43,14 @@ Notice, the bash commands do exactly the same thing! It's just a different way o
 
 The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - 
 
-**our file is located at /Desktop/Shantou_2018/bash_practice/Unix_and_Perl_course**. 
+**our file is located at /Desktop/Shantou_2018/Unix_and_Perl_course**. 
 
 Going forward, you can follow the exercises without a problem, just remember where our file is! This is good practice for developing your directory awareness.
 
 Instead of U5, open a new terminal window and type the following:
 ```
 # Change to the desired directory
-cd Desktop/Shantou_2018/bash_practice/Unix_and_Perl_course
+cd Desktop/Shantou_2018/Unix_and_Perl_course
 
 # Check the contents of that directory
 ls
