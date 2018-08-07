@@ -12,6 +12,8 @@ If you have Windows 10, [this is easy.](https://www.howtogeek.com/249966/how-to-
 
 Users with earlier versions of windows need to configure a [virtual machine.](https://blog.storagecraft.com/the-dead-simple-guide-to-installing-a-linux-virtual-machine-on-windows/)
 
+#### Code editors: 
+
 #### UNIX is best when used directly through your terminal. While in this class, one of our primary goals is to teach you to be comfortable working exclusively via the terminal. That said, it can sometimes be useful to have a graphical user interface available for file exploration, especially when working on a remote server. 
 
 - For Windows, use [winSCP](https://winscp.net/eng/download.php)
