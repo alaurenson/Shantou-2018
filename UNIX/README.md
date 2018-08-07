@@ -33,7 +33,11 @@ In addition to these, you'll want to get familiar with terminal-based text editi
 
 For nearly all file manipulations we'll do, and for any "bioinformatic" analysis programs we'll run, we'll be using bash in the terminal.
 
-Bash is one of several available **shell** languages that allow a user to communcate with the computer's **kernel**. The kernel refers to the active machine-language processes interacting with the computer hardware - this is not generally readable by humans, and so we rely on the shell to allow us to communicate with the computer. Bash is very common, and is my favorite, so that's what we'll be working with! 
+Bash is one of several available **shell** languages that allow a user to communcate with the computer's **kernel**. The kernel refers to the active machine-language processes interacting with the computer hardware - this is not generally readable by humans, and so we rely on the shell to allow us to communicate with the computer. 
+
+The kernel is essentially the "linux" or "mac or "windows" itself. The shell is how we communicate with it.
+
+Bash is very common shell language, and is my favorite, so that's what we'll be working with! 
 
 ----
 
@@ -42,6 +46,8 @@ Bash is one of several available **shell** languages that allow a user to commun
 An underlying goal in bioinformatic analysis is to produce data that we can visually interperet. An endlessly-useful tool for this is R.
 
 R is a statistical programming language capable of handling massive data-sets (like those we're working on), and is something that all bioinformaticians should be aware of, if not fluent in. A huge number of academic publications use R data analysis, and we'll make use of it later in this course for a variety of things.
+
+To be fair, there are many such languages available (the major one being Anaconda, a distribution of Python) - that said, we'll be able to utilize R effectively in the least amount of time. If you're interested in more sophisticated programming, Python is a fantastic language to learn. 
 
 ----
 
