@@ -29,7 +29,7 @@ In addition to these, you'll want to get familiar with terminal-based text editi
 - For Mac & Linux, use [CyberDuck](https://cyberduck.io)
 ----
 
-### [A crash-course in bash]()
+### [A crash-course in bash](https://github.com/chazgoo/Shantou-2018/tree/master/UNIX/bash)
 
 For nearly all file manipulations we'll do, and for any "bioinformatic" analysis programs we'll run, we'll be using bash in the terminal.
 
@@ -41,7 +41,7 @@ Bash is a very common shell language, and is my favorite, so that's what we'll b
 
 ----
 
-### [A crash-course in R]()
+### [A crash-course in R](https://github.com/chazgoo/Shantou-2018/tree/master/UNIX/R)
 
 An underlying goal in bioinformatic analysis is to produce data that we can visually interperet. An endlessly-useful tool for this is R.
 
