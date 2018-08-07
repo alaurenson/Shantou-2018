@@ -47,7 +47,7 @@ An underlying goal in bioinformatic analysis is to produce data that we can visu
 
 R is a statistical programming language capable of handling massive data-sets (like those we're working on), and is something that all bioinformaticians should be aware of, if not fluent in. A huge number of academic publications use R data analysis, and we'll make use of it later in this course for a variety of things.
 
-To be fair, there are many such languages available (the major one being [Anaconda](https://www.anaconda.com/download/), a distribution of [Python](https://www.python.org)) - that said, we'll be able to utilize R effectively in the least amount of time. If you're interested in more sophisticated programming, Python is a fantastic language to learn. 
+To be fair, there are many such languages available (the major one being [Anaconda](https://www.anaconda.com/download/), a distribution of [Python](https://www.python.org)) - that said, we'll be able to utilize R effectively in the least amount of time. If you're interested in more sophisticated programming, Python is a highly versatile and powerful language to learn. 
 
 ----
 
