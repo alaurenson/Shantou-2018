@@ -37,7 +37,7 @@ Bash is one of several available **shell** languages that allow a user to commun
 
 The kernel is essentially the "linux" or "mac or "windows" itself. The shell is how we communicate with it.
 
-Bash is very common shell language, and is my favorite, so that's what we'll be working with! 
+Bash is a very common shell language, and is my favorite, so that's what we'll be working with! 
 
 ----
 
