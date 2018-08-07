@@ -62,10 +62,22 @@ ls
 pwd
 ```
 
-4. From here, we should be able to continue from U6 onward - hopefully we can get to U33!
+4. From here, we should be able to continue together from U6 onward - hopefully we can get to U36!
 
-I realize there are a lot of commands to learn: don't worry about memorizing them - you will eventually learn them through use!
+I realize there are a lot of commands to learn: don't worry about memorizing them - I promise that you will eventually learn them through use!
 
 ----
 
+### Futher reading & additional resources
+1. Part 2 of the Unix and Perl Primer is very useful; if you can get up through at least U45, and tell me what the following command does, I'll be extremely impressed. NOT REQUIRED.
+```
+# This is from U45 - it's cut off in the PDF; this is the full command:
+$ tr '\n' '@' < intron_IME_data.fasta | sed 's/>/#>/g' | tr '#' '\n' | grep "i1_.*5UTR" | sort -nk 3 -t "_" | head -n 5 | tr '@' '\n'
+```
+
+2. [The Bash Guide](https://guide.bash.academy): this is an extremely well-written and thorough guide to the intricacies of Bash. Well-worth your time if you want to pursue this sort of work.  
+
+3. [Bioinformatic one-liners](https://github.com/stephenturner/oneliners#etc) compiled by Stephen Turner. These are somewhat advanced compared to what we did today, but resemble the kinds of commands we'll use later in the course. 
+
+4. [UNIX commands for NGS data processing](http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/linux.html) written by U. Ijaz. A great cheat-sheet for UNIX commands, and specific commands for dealing with next-gen sequencing data. The exercises herein are very similar to the kind of work we're hoping to achieve in this course. 
 
