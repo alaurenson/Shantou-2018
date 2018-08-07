@@ -68,8 +68,8 @@ I realize there are a lot of commands to learn: don't worry about memorizing the
 
 ----
 
-### Futher reading & additional resources
-Part 2 of the Unix and Perl Primer is very useful; if you can get up through at least U45, and tell me what the following command does, I'll be extremely impressed. NOT REQUIRED.
+### Futher reading, plus a challenge
+Part 2 of the Unix and Perl Primer is very useful; if you can get up through at least U45, and tell me what the following command does, I'll be extremely impressed. NOT REQUIRED, but will totally help you in the long-run.
 ```
 # This is from U45 - it's cut off in the PDF; this is the full command:
 $ tr '\n' '@' < intron_IME_data.fasta | sed 's/>/#>/g' | tr '#' '\n' | grep "i1_.*5UTR" | sort -nk 3 -t "_" | head -n 5 | tr '@' '\n'
