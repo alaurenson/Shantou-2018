@@ -3,7 +3,7 @@
 In Bioinformatics, UNIX is the preferred operating environment: nearly all available software is written for UNIX.
 
 ----
-### First things first: setting up! 
+### First things first: setting up 
 
 #### Mac and Linux systems, conventiently, are already UNIX-based - Windows, however, is not. This doesn't matter; for those of you running Windows, we'll need to configure your machines to run a virtual UNIX envrionment. 
 
@@ -28,3 +28,6 @@ In addition to these, you'll want to get familiar with terminal-based text editi
 - For Windows, use [winSCP](https://winscp.net/eng/download.php)
 - For Mac & Linux, use [CyberDuck](https://cyberduck.io)
 ----
+
+### Next: A crash-course in bash
+
