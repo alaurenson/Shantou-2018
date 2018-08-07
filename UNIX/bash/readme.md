@@ -1,5 +1,5 @@
 ## A crash-course in bash
-
+----
 #### We'll begin our work by working through some exercises developed by Keith Bradnam and Ian Korf at UC Davis. This will help you get comfortable in a UNIX working environment, and ensure that we're all starting from the same place.
 
 There are two ways you can download the files:
@@ -42,11 +42,13 @@ Notice, the bash commands do exactly the same thing! It's just a different way o
 
 2. Go to p.13, and follow exercises U1, U2, U3, and U4
 
-3. Because we downloaded the folder directly, our data isn't where exercise U5 suggests it is. 
+3. Because we downloaded the folder directly, our data isn't where exercise U5 says it is. 
 
-The PDF will refer to /Volumes/USB/Unix_and_Perl_course - **our file is located at /Desktop/Shantou_2018/bash_practice/Unix_and_Perl_course**. Going forward, you can follow the exercises without a problem, just remember where our file is!
+The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - 
 
-This is good practice for developing your directory awareness.
+**our file is located at /Desktop/Shantou_2018/bash_practice/Unix_and_Perl_course**. 
+
+Going forward, you can follow the exercises without a problem, just remember where our file is! This is good practice for developing your directory awareness.
 
 Instead of U5, open a new terminal window and type the following:
 ```
@@ -60,4 +62,10 @@ ls
 pwd
 ```
 
-4. From here, we should be able to continue from U6 onward. 
+4. From here, we should be able to continue from U6 onward - hopefully we can get to U33!
+
+I realize there are a lot of commands to learn: don't worry about memorizing them - you will eventually learn them through use!
+
+----
+
+
