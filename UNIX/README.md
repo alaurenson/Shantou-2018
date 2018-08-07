@@ -31,7 +31,29 @@ In addition to these, you'll want to get familiar with terminal-based text editi
 
 ### [A crash-course in bash]()
 
-Bash is one of several available **shell** languages that allow a user to communcate with the computer's **kernel**. The kernel refers to the active machine-language processes interacting with the computer hardware - this is not generally readable by humans, and so we rely on the shell to allow us to communicate with the computer. Bash is very common, and is my favorite, so that's what we'll be working with!
+For nearly all file manipulations we'll do, and for any "bioinformatic" analysis programs we'll run, we'll be using bash in the terminal.
+
+Bash is one of several available **shell** languages that allow a user to communcate with the computer's **kernel**. The kernel refers to the active machine-language processes interacting with the computer hardware - this is not generally readable by humans, and so we rely on the shell to allow us to communicate with the computer. Bash is very common, and is my favorite, so that's what we'll be working with! 
+
+----
+
+### [A crash-course in R]()
+
+An underlying goal in bioinformatic analysis is to produce data that we can visally interperet. An endlessly-useful tool for this is R.
+
+R is a statistical programming language capable of handling massive data-sets (like those we're working on), and is something that all bioinformaticians should be aware of, if not fluent in. A huge number of academic publications use R data analysis, and we'll make use of it later in this course for a variety of things.
+
+There are other programing languages capable of performing similar tasks, but R is uniquely well suited for Bioinformatics. 
+
+----
+
+### Other resources and further reading
+
+
+
+
+
+
 
 
 
