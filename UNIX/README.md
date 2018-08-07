@@ -39,11 +39,9 @@ Bash is one of several available **shell** languages that allow a user to commun
 
 ### [A crash-course in R]()
 
-An underlying goal in bioinformatic analysis is to produce data that we can visally interperet. An endlessly-useful tool for this is R.
+An underlying goal in bioinformatic analysis is to produce data that we can visually interperet. An endlessly-useful tool for this is R.
 
 R is a statistical programming language capable of handling massive data-sets (like those we're working on), and is something that all bioinformaticians should be aware of, if not fluent in. A huge number of academic publications use R data analysis, and we'll make use of it later in this course for a variety of things.
-
-There are other programing languages capable of performing similar tasks, but R is uniquely well suited for Bioinformatics. 
 
 ----
 
