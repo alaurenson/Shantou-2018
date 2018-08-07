@@ -47,7 +47,7 @@ An underlying goal in bioinformatic analysis is to produce data that we can visu
 
 R is a statistical programming language capable of handling massive data-sets (like those we're working on), and is something that all bioinformaticians should be aware of, if not fluent in. A huge number of academic publications use R data analysis, and we'll make use of it later in this course for a variety of things.
 
-To be fair, there are many such languages available (the major one being Anaconda, a distribution of Python) - that said, we'll be able to utilize R effectively in the least amount of time. If you're interested in more sophisticated programming, Python is a fantastic language to learn. 
+To be fair, there are many such languages available (the major one being [Anaconda](https://www.anaconda.com/download/), a distribution of [Python](https://www.python.org)) - that said, we'll be able to utilize R effectively in the least amount of time. If you're interested in more sophisticated programming, Python is a fantastic language to learn. 
 
 ----
 
@@ -58,6 +58,8 @@ To be fair, there are many such languages available (the major one being Anacond
 2. [Bioinformatic one-liners](https://github.com/stephenturner/oneliners#etc) compiled by Stephen Turner. These are somewhat advanced compared to what we did today, but resemble the kinds of commands we'll use later in the course. 
 
 3. [UNIX commands for NGS data processing](http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/linux.html) written by U. Ijaz. A great cheat-sheet for UNIX commands, and specific commands for dealing with next-gen sequencing data. The exercises herein are very similar to the kind of work we're hoping to achieve in this course.
+
+4. [Python For Biologists](https://pythonforbiologists.com) is a fantastic resource for getting started with Python. This is an extremly powerful programming language, and is something you should check out if you're serious about Bioinformatics. Look at the Python Tutorial section. Sadly, I don't have time (on top of everything else) to get everyone up to speed with Python in two weeks.  
 
 
 
