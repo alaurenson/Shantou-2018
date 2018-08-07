@@ -29,7 +29,9 @@ In addition to these, you'll want to get familiar with terminal-based text editi
 - For Mac & Linux, use [CyberDuck](https://cyberduck.io)
 ----
 
-### Next: A crash-course in bash
+### [A crash-course in bash]()
 
-Bash is one of several "shell" 
+Bash is one of several available **shell** languages that allow a user to communcate with the computer's **kernel**. The kernel refers to the active machine-language processes interacting with the computer hardware - this is not generally readable by humans, and so we rely on the shell to allow us to communicate with the computer. Bash is very common, and is my favorite, so that's what we'll be working with!
+
+
 
