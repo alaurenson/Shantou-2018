@@ -1,6 +1,6 @@
 ## The UNIX environment
 
-In Bioinformatics, UNIX is the preferred operating environment: nearly all available software is written for UNIX.
+In Bioinformatics, UNIX is the preferred environment: nearly all available software is written for UNIX. Before we get into true analysis, it's critical to become familiar with this working environment.
 
 ----
 ### First things first: setting up 
@@ -30,4 +30,6 @@ In addition to these, you'll want to get familiar with terminal-based text editi
 ----
 
 ### Next: A crash-course in bash
+
+Bash is one of several "shell" 
 
