@@ -36,11 +36,15 @@ After running TransDecoder.LongOrfs, you'll find a multi-fasta protein file call
 
 Search the peptides for protein domains using Pfam. This requires [HMMER](http://hmmer.janelia.org) and [Pfam](ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz) databases to be installed.
 
-**First, download and compress HMM database - only needs to happen once per database**
+**First, download, unzip, and compress HMM database - only needs to happen once per database**
 
-    wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam31.0/Pfam-A.full.gz
+    wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+    
+    tar -zvxf Pfam-A.hmm.gz
 
-    ~/software/hmmer-3.1b2-linux-intel-x86_64/binaries/hmmpress Pfam-A.full
+    ~/software/hmmer-3.1b2-linux-intel-x86_64/binaries/hmmpress Pfam-A.hmm
+    
+**Now we can scan**
 
     hmmscan --cpu 8 --domtblout pfam.domtblout /path/to/Pfam-A.hmm transdecoder_dir/longest_orfs.pep
 
