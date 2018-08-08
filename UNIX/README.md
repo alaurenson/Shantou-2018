@@ -29,7 +29,7 @@ In addition to these, you'll want to get familiar with terminal-based text editi
 
 #### While in this class, one of our primary goals is to teach you to be comfortable working exclusively via the terminal. That said, it can sometimes be useful to have a graphical user interface available for file exploration, especially when working on a remote server. 
 
-- For Windows, use [winSCP](https://winscp.net/eng/download.php)
+- For Windows, use [winSCP](https://winscp.net/eng/download.php) or [PuTTY](https://putty.org)
 - For Mac & Linux, use [CyberDuck](https://cyberduck.io)
 ----
 
