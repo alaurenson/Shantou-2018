@@ -1,4 +1,4 @@
-# [Algal Phylogenetics](https://github.com/chazgoo/Shantou-2018/wiki) 
+# Algal Phylogenetics
 #### Shantou University - Summer 2018
 
 ----
@@ -12,11 +12,11 @@ Basic commands and navigation, directory structure, command structures (optional
 
 R is a programming language used for statistics and plotting data - we'll provide a very basic intro.
 
-#### 2. [The Data, Assembly](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly)
+#### 2. [The Data, QC, Assembly](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly)
 From raw sequence data to an assembled dataset, Trimming, QC, Assembly. 
 
 #### 3. [Annotation: HMMs, ORFs, & Quantification](https://github.com/chazgoo/Shantou-2018/tree/master/Annotation)
-How do we identify open reading frames? How do quantify expresison? Genome vs Transcriptome, Intron vs Exon.
+How do we identify open reading frames? How do quantify expresison? 
 
 #### 4. [Identification: BLAST!](https://github.com/chazgoo/Shantou-2018/tree/master/Identification)
 What genes are being transcribed? Why S. Altschull is the most cited biologist ever. Preparing a BLAST database and running the software. 
