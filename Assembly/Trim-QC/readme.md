@@ -40,4 +40,40 @@ In the next section, we'll use RNASpades to assemble the trimmed dataset.
 
 ----
 
+### 1. FastQC with raw data
+0. Set a permission. The fastqc program can be used many ways. Because we're going to run it directly, we need to set an "execute" permission. 
+```
+# Navigate into the FastQC software directory
+$ cd ~/Desktop/bio_software/FastQC
+
+# Look at what's there
+$ ls -l
+
+# Notice that "fastqc" has a permission line like this: -rw-r--r--. It's not executable. Make it executable
+$ chmod u+x fastqc
+
+# Check if it worked
+$ ls -l
+
+# Now the permissions line should look like this: -rwxr--r--. That "x" makes all the difference. 
+```
+Cool, onward!
+
+1. You'll each recieve a set of raw reads, the file will be called something like this:
+> Akle_TTAGGC_L004_R1_001.fastq.gz
+
+2. Next, use FastQC to generate a quality report. Navigate in your terminal to the directory with your fastq file and do the following:
+```
+$ ~/Desktop/bio_software/FastQC/fastqc ./Akle_TTAGGC_L004_R1_001.fastq.gz
+```
+
+3. When complete, two files will be generated, a .html and a .zip. Open the .html file in your browser (by double-clicking, wherever you have it saved!)
+
+Now we'll go through and compare our results.
+
+### Trimming
+
+
+
+
 
