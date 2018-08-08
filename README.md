@@ -32,3 +32,4 @@ Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs.
 
 #### [*Tetraselmis suecica*]()
 
+#### [*Synechococcus ?*]()
