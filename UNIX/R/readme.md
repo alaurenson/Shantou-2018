@@ -61,7 +61,7 @@ Download your installer, and follow the on-screen prompts using default settings
 
 ----
 
-### Installing swirl(), the tutorial package
+### Install and run [swirl()](https://swirlstats.com), the tutorial package
 
 For Windows and Mac:
 
@@ -93,3 +93,51 @@ $ sudo apt-get install libcurl4-openssl-dev
 > library("swirl")
 > swirl()
 ```
+----
+
+Now that we've installed everything, we'll work through some of the swirl exercises to get a feel for how R works. 
+
+Everyone do the following:
+1. Type `swirl()` into the command line and press enter
+2. Follow the prompts until we see:
+```
+...
+
+| To begin, you must install a course. I can install a course for you from the
+| internet, or I can send you to a web page
+| (https://github.com/swirldev/swirl_courses) which will provide course options
+| and directions for installing courses yourself. (If you are not connected to
+| the internet, type 0 to exit.)
+
+1: R Programming: The basics of programming in R
+2: Regression Models: The basics of regression modeling in R
+3: Statistical Inference: The basics of statistical inference in R
+4: Exploratory Data Analysis: The basics of exploring data in R
+5: Don't install anything for me. I'll do it myself.
+```
+3. Type `1` and press enter. When you see this:
+```
+| Please choose a lesson, or type 0 to return to course menu.
+
+ 1: Basic Building Blocks      2: Workspace and Files     
+ 3: Sequences of Numbers       4: Vectors                 
+ 5: Missing Values             6: Subsetting Vectors      
+ 7: Matrices and Data Frames   8: Logic                   
+ 9: Functions                 10: lapply and sapply       
+11: vapply and tapply         12: Looking at Data         
+13: Simulation                14: Dates and Times         
+15: Base Graphics
+```
+4. Type `1` again. We're starting at the beginning and working our way through these exercises together. These will help us get comfortable with the R environment. 
+
+----
+
+If we can get through all of this with time to spare, I'll show you how to use R to view your own data! 
+
+Throughout this course, we'll use R for a variety of things. Database management and generating plots are the big ones. 
+
+----
+
+### Further exercises
+
+This isn't required, but if you want additional practice, then swirl() topic **4: Exploratory Data Analysis** is well worth your time. You can access it the same way we opened topic 1.  
