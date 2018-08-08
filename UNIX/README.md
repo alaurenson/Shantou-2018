@@ -57,7 +57,7 @@ To be fair, there are many such languages available (the major one being [Anacon
 
 ### Some other resources
 
-1. [The Bash Guide](https://guide.bash.academy): this is an extremely well-written and thorough guide to the intricacies of Bash. Well-worth your time if you want a deeper understanding of the UNIX environment.  
+1. [The Bash Guide](https://guide.bash.academy): this is an extremely well-written and thorough guide to the intricacies of Bash. Worth your time if you want a deeper understanding of the UNIX environment.  
 
 2. [Bioinformatic one-liners](https://github.com/stephenturner/oneliners#etc) compiled by Stephen Turner. These are somewhat advanced compared to what we did today, but resemble the kinds of commands we'll use later in the course.
 
