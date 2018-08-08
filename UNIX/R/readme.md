@@ -94,6 +94,7 @@ $ sudo apt-get install libcurl4-openssl-dev
 > swirl()
 ```
 ----
+----
 
 Now that we've installed everything, we'll work through some of the swirl exercises to get a feel for how R works. 
 
