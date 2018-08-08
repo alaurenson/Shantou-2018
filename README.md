@@ -6,11 +6,9 @@
 ### Major Topics
 
 #### 1. [The UNIX environment & Basic R](https://github.com/chazgoo/Shantou-2018/tree/master/UNIX)
-What is UNIX? 
+Bash: basic commands and navigation, directory structure, shell vs. kernel, pipes and scripts, regex. 
 
-Basic commands and navigation, directory structure, command structures (optional, required), standard in/out/error, shell vs. kernel, pipes and scripts, regex. 
-
-R is a programming language used for statistics and plotting data - we'll provide a very basic intro.
+R: a programming language used for statistics and plotting data - we'll provide a basic intro.
 
 #### 2. [The Data, QC, Assembly](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly)
 From raw sequence data to an assembled dataset, Trimming, QC, Assembly. 
