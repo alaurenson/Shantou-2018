@@ -6,8 +6,6 @@ Today, we're going to download R and the associated IDE (Integrated Development 
 
 Once we finish this, you'll have enough of a background that we can properly begin our analysis!
 
-====
-
 ### Installation of R:
 
 For [Windows](https://cran.rstudio.com/bin/windows/)
@@ -64,3 +62,14 @@ Download your installer, and follow the on-screen prompts using default settings
 ----
 
 ### Installing swirl(), the tutorial package
+
+For Windows and Mac:
+
+1. Open R Studio
+2. In the console, type the following commands:
+```
+# Note that R's console uses '>' rather than Bash's '$'
+> install.packages("swirl")
+> library("swirl")
+> swirl()
+```
