@@ -36,20 +36,20 @@ If not, you'll need to install it through the terminal. My instructions below sh
 In your terminal:
 ```
 # Get your linux version - note this! You'll need it in the next step
-cat /etc/*release
+$ cat /etc/*release
 
 # Add an external repository (maintained by CRAN, to keep your software up-to-date)
 # !!! Replace ubuntu and YOUR_VERSION/ below with your distro and version. e.g. ubuntu lucid/
-sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu YOUR_VERSION/" >> /etc/apt/sources.list'
+$ sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu YOUR_VERSION/" >> /etc/apt/sources.list'
 
 # Send key to CRAN server
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 
 # Update packages
-sudo apt-get update
+$ sudo apt-get update
 
 # (Finally) install R
-sudo apt-get install r-base-dev
+$ sudo apt-get install r-base-dev
 ```
 ----
 
