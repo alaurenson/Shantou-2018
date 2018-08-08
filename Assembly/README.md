@@ -71,3 +71,7 @@ $ tar -zxf SPAdes-3.12.0-Darwin.tar.gz
 $ cd SPAdes-3.12.0-Darwin/bin/
 ```
 ----
+
+And now... some ACTUAL ANALYSIS
+----
+
