@@ -23,13 +23,3 @@ What genes are being transcribed? Why S. Altschull is the most cited biologist e
 Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs. 
 
 ----
-
-### Dataset Information
-
-#### [*Amphidinium klebsii*]()
-
-#### [*Gyrodinium instriatum*]()
-
-#### [*Tetraselmis suecica*]()
-
-#### [*Synechococcus ?*]()
