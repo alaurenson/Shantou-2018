@@ -25,10 +25,8 @@ For Linux, it's a little more complicated. Maybe.
 [Here](https://cran.rstudio.com/bin/linux/) is the official page that lists the software for each of the four major linux distributions. You don't need to click this yet. 
 
 First, check if R came with your version of Linux. This happens sometimes.
-Open a terminal and type 'R':
-```
-R
-```
+Open a terminal and type `R`
+
 If you hit enter, and it says "R version... etc...", **and** it's v3.1.0 or greater, and your cursor looks like >, then congrats! You're done. 
  
 If not, you'll need to install it through the terminal. My instructions below should work for Ubuntu. Please ask for help if something isn't working!
