@@ -141,4 +141,16 @@ Throughout this course, we'll use R for a variety of things. Database management
 
 ### Further exercises
 
-This isn't required, but if you want additional practice, then swirl() topic **4: Exploratory Data Analysis** is well worth your time. You can access it the same way we opened topic 1.  
+This isn't required, but if you want additional practice, then swirl() topic **4: Exploratory Data Analysis** is well worth your time. 
+
+You can access it like this:
+
+```
+> library("swirl")
+> install_course("Exploratory_Data_Analysis")
+> swirl()
+> 2         # "No. Let me start something new."
+> 1         # "Exploratory Data Analysis"
+```
+
+The [Swirl course repository](https://github.com/swirldev/swirl_courses) has a number of good lessons, if you find yourself wanting to learn R more thoroughly. 
