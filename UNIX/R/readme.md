@@ -10,17 +10,17 @@ Once we finish this, you'll have enough of a background that we can properly beg
 
 ### Installation of R:
 
-- For [Windows](https://cran.rstudio.com/bin/windows/)
+For [Windows](https://cran.rstudio.com/bin/windows/)
 1. Follow the link, and click 'base', then click 'Download R 3.5.1 for Windows'
 2. When the download completes, open the the executable setup file, R-3.5.1-win. 
 3. Follow the on-screen prompts and install using default settings
 
-- For [Mac](https://cran.rstudio.com/bin/macosx/)
+For [Mac](https://cran.rstudio.com/bin/macosx/)
 1. Follow the link, and click on the most recent version (R-3.5.1.pkg)
 2. When the download completes, open the .pkg file
 3. Follow the on-screen prompts and install using default settings
 
-- For Linux, it's a little more complicated. Maybe.
+For Linux, it's a little more complicated. Maybe.
 
 [Here](https://cran.rstudio.com/bin/linux/) is the official page that lists the software for each of the four major linux distributions. You don't need to click this yet. 
 
