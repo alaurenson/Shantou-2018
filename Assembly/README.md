@@ -75,6 +75,6 @@ $ cd SPAdes-3.12.0-Darwin/bin/
 And now... some ACTUAL ANALYSIS
 ----
 
-###[QC, Trimming, and QC again]()
+### [QC, Trimming, and QC again]()
 
-###[Our first assembly]()
+### [Our first assembly]()
