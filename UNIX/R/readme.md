@@ -66,9 +66,29 @@ Download your installer, and follow the on-screen prompts using default settings
 For Windows and Mac:
 
 1. Open R Studio
-2. In the console, type the following commands:
+2. In the R console, type the following commands:
 ```
 # Note that R's console uses '>' rather than Bash's '$'
+# Also note that this scheme is how we install and use all packages in R. 
+
+> install.packages("swirl")
+> library("swirl")
+> swirl()
+```
+
+For Linux:
+1. Open a normal terminal, type the following:
+```
+# Install RCurl, which is an R package that allows for internet downloads
+
+$ sudo apt-get install libcurl4-openssl-dev
+```
+2. Open R Studio
+3. In the R console, type the following commands:
+```
+# Note that R's console uses '>' rather than Bash's '$'
+# Also note that this scheme is how we install and use all packages in R. 
+
 > install.packages("swirl")
 > library("swirl")
 > swirl()
