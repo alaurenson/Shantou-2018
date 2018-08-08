@@ -13,26 +13,28 @@ Make a folder on your desktop called bash_practice, and place the download in th
 2. If you want to jump right in, open a new terminal window and type the following to achieve the same thing:
 ```
 # NOTE: This is a code block. This is how I'll share commands!
-# All comments will start with "#", don't type out comments - these are for your understanding.
-# All commands should be typed as a single line - press enter or return to execute the command, then go to the next line. 
+# All comments will start with '#', don't type out comments - these are for your understanding only.
+# Commands start with '$' 
+# Commands should be typed as a single line, DON'T type '$' - that's the prompt, and you'll see it's already there. 
+# Press enter to execute the command, then go to the next line. 
 
 # Change directory to your desktop
-cd ~/Desktop
+$ cd ~/Desktop
 
 # Make a directory called "bash_practice", and move into that directory
-mkdir bash_practice; cd bash_practice 
+$ mkdir bash_practice; cd bash_practice 
 
 # Download "this" from the internet
-wget "http://korflab.ucdavis.edu/Unix_and_Perl/current.zip"
+$ wget "http://korflab.ucdavis.edu/Unix_and_Perl/current.zip"
 
 # Look at what's in the directory
-ls
+$ ls
 
 # Unzip the file
-unzip current.zip
+$ unzip current.zip
 
 # Remove the .zip file
-rm current.zip
+$ rm current.zip
 ```
 
 Notice, the bash commands do exactly the same thing! It's just a different way of navigating your computer. I promise that after some practice, you'll find yourself using bash often because of how convenient it is - even when you're not doing bioinformatic work.
@@ -46,13 +48,13 @@ Notice, the bash commands do exactly the same thing! It's just a different way o
 3. Instead of U5, open a new terminal window and type the following:
 ```
 # Change to the desired directory
-cd Desktop/bash_practice/Unix_and_Perl_course
+$ cd Desktop/bash_practice/Unix_and_Perl_course
 
 # Check the contents of that directory
-ls
+$ ls
 
 # Check your "present working directory"
-pwd
+$ pwd
 ```
 > Because we downloaded the folder directly, our data isn't where exercise U5 says it is. The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - **our file is located at /Desktop/bash_practice/Unix_and_Perl_course**. Going forward, you can follow the exercises without a problem if you remember where our file is! This is good practice for developing your directory awareness.
 
