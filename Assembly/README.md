@@ -32,7 +32,7 @@ If you're missing any of them, please follow the above links and install them!
 #### Now that we have all of our dependencies installed, we'll download the programs that actually perform the analysis and assembly. 
 
 - To obtain reports about the quality of our sequence data: [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-- To clean up our raw data prior to assembly: [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic)
+- To clean up our raw data prior to assembly: BBduk, part of [BBmap](https://sourceforge.net/projects/bbmap/)
 - To assemble our cleaned-up data: [RNAspades](http://cab.spbu.ru/software/rnaspades/)
 
 ----
