@@ -9,6 +9,10 @@ In Bioinformatics, UNIX is the preferred environment: nearly all available softw
 
 If you have Windows 10, [this is easy.](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
 
+Once you've done this, you can open a terminal one of two ways:
+1. Click on the Ubuntu icon
+2. Open your command line and type 'bash'
+
 Users with earlier versions of windows need to configure a [virtual machine.](https://blog.storagecraft.com/the-dead-simple-guide-to-installing-a-linux-virtual-machine-on-windows/)
 
 #### Throughout all of this, you'll want a dedicated desktop program with which to write scripts, view files, and so on. Normal word processors (like Word) aren't ideal due to limits in accepted file format, and due to an excess of graphical options. 
@@ -19,9 +23,11 @@ Users with earlier versions of windows need to configure a [virtual machine.](ht
 
 In addition to these, you'll want to get familiar with terminal-based text editing software. All of these are already built-in with Unix, so you don't need to download anything. They each have a steep learning curve, but can be incredibly powerful when you're comfortable using them. Best to pick one and learn it well!
 
-- [vim](https://www.vim.org)
 - [nano](https://www.nano-editor.org) - probably the easiest to start with!
-- [emacs](https://www.gnu.org/software/emacs/)
+- [vim](https://www.vim.org) - I'm personally familiar with this one.
+- [emacs](https://www.gnu.org/software/emacs/) - You're on your own with emacs. I'm not familiar. 
+
+Now I'll have each of you open a terminal and test these out!
 
 #### While in this class, one of our primary goals is to teach you to be comfortable working exclusively via the terminal. That said, it can sometimes be useful to have a graphical user interface available for file exploration, especially when working on a remote server. 
 
