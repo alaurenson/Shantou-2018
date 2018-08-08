@@ -6,7 +6,7 @@ Today, we're going to download R and the associated IDE (Integrated Development 
 
 Once we finish this, you'll have enough of a background that we can properly begin our analysis!
 
-----
+====
 
 ### Installation of R:
 
@@ -15,12 +15,14 @@ For [Windows](https://cran.rstudio.com/bin/windows/)
 2. When the download completes, open the the executable setup file, R-3.5.1-win. 
 3. Follow the on-screen prompts and install using default settings
 
+----
 
 For [Mac](https://cran.rstudio.com/bin/macosx/)
 1. Follow the link, and click on the most recent version (R-3.5.1.pkg)
 2. When the download completes, open the .pkg file
 3. Follow the on-screen prompts and install using default settings
 
+----
 
 For Linux, it's a little more complicated. Maybe.
 
@@ -51,6 +53,7 @@ sudo apt-get update
 # (Finally) install R
 sudo apt-get install r-base-dev
 ```
+----
 
 ### Installation of R studio
 
