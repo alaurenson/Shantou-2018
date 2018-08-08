@@ -39,10 +39,16 @@ The method I use in dealing with bioinformatic software is to save all of my sof
 2. You can call processes directly from that location no matter what your present working directory
 3. You need not worry about random programs piling up deep in your computer
 
-So - let's download our first three pieces of software. Follow the links and download all three program files into a directory. 
+So - let's download our first three pieces of software. Follow the links and download all three program files into a directory.
+----
 
-- To obtain reports about the quality of our sequence data: [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-- To clean up our raw data prior to assembly: BBduk, part of [BBmap](https://sourceforge.net/projects/bbmap/)
-- To assemble our cleaned-up data: [RNAspades](http://cab.spbu.ru/software/rnaspades/)
+
+
+To obtain reports about the quality of our sequence data: [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) 
+- click "Download now", and set the download location to your 
+
+To clean up our raw data prior to assembly: BBduk, part of [BBmap](https://sourceforge.net/projects/bbmap/); click "Download
+
+To assemble our cleaned-up data: [RNAspades](http://cab.spbu.ru/software/rnaspades/); 
 
 ----
