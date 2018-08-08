@@ -60,3 +60,4 @@ Download your installer, and follow the on-screen prompts using default settings
 
 ----
 
+### Installing swirl(), the tutorial package
