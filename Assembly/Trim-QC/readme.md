@@ -99,10 +99,10 @@ $ ~Desktop/bio_software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=trimmed_Akle_TTA
 
 ### 3. Run FastQC on the trimmed data
 
-Now, like you did in step 1, run FastQC on your new trimmed file. 
+Now, like you did in step 1, **run FastQC on your new trimmed file.**
 
 (Note - You don't need to set the permission again, you already did that!)
 
 ----
 
-
+### 4. Compare the FastQC reports for the raw and trimmed data; what differences can you see?
