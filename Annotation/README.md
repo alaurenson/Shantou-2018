@@ -6,14 +6,15 @@ Now that we've built assemblies, it's time to identify 'Open Reading Frames' (OR
 
 ----
 
-### [TransDecoder]()
+### [TransDecoder](https://github.com/chazgoo/Shantou-2018/tree/master/Annotation/TransDecoder)
  
 ----
 
-### [OrthoFinder]()
+### [OrthoFinder](https://github.com/chazgoo/Shantou-2018/tree/master/Annotation/OrthoFinder)
 
 ----
 
-### [MUSCLE]()
+### [MUSCLE](https://github.com/chazgoo/Shantou-2018/tree/master/Annotation/MUSCLE)
+
 
 
