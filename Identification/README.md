@@ -1,9 +1,9 @@
 **UNDER CONSTRUCTION**
 
 
-## Identification via BLAST
-
+Identification: BLAST
 ----
+
 ### [The BLAST Manual](https://www.ncbi.nlm.nih.gov/books/NBK1762/)
 
 #### BLAST+
