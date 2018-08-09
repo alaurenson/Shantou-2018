@@ -16,4 +16,4 @@ Now that we've built assemblies, it's time to identify 'Open Reading Frames' (OR
 
 ### [MUSCLE]()
 
-**Add: MSAs of gene families (eg/ find orthogroup, ID w/ HMM and BLAST data, Perform MSA w/ MUSCLE)**
+
