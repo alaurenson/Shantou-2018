@@ -79,7 +79,10 @@ In the terminal, navigate to wherever the raw file is, and do the following:
 
 ```
 # Remove any identified adapter sequences - bbduk has an internal database of common adapters that it checks against.
-# Here, "in"
+# "in" is set to my reads file (exactly as I recieved it). You need to alter this to reflect your file.
+# "out" is set as "temp".fastq, for "temporary". You may leave this as it is. 
+# "ref" is the "reference" that bbduk uses to identify adapter sequence. 
+# The other parameters
 $ ~/software/bbmap/bbduk.sh -Xmx1g in=Akle_TTAGGC_L004_R1_001.fastq.gz out=temp.fastq ref=~/software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
 
 # Remove low-quality sequences/ 
