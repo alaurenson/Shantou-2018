@@ -41,7 +41,7 @@ In the next section, we'll use RNASpades to assemble the trimmed dataset.
 ----
 
 ### 1. FastQC with raw data
-0. Set a permission. The fastqc program can be used many ways. Because we're going to run it directly, we need to set an "execute" permission. 
+Set a permission. The fastqc program can be used many ways. Because we're going to run it directly, we need to set an "execute" permission. 
 ```
 # Navigate into the FastQC software directory
 $ cd ~/Desktop/bio_software/FastQC
@@ -59,20 +59,29 @@ $ ls -l
 ```
 Cool, onward!
 
-1. You'll each recieve a set of raw reads, the file will be called something like this:
+You'll each recieve a set of raw reads, the file will be called something like this:
 > Akle_TTAGGC_L004_R1_001.fastq.gz
 
-2. Next, use FastQC to generate a quality report. Navigate in your terminal to the directory with your fastq file and do the following:
+Next, use FastQC to generate a quality report. Navigate in your terminal to the directory with your fastq file and do the following:
 ```
 $ ~/Desktop/bio_software/FastQC/fastqc ./Akle_TTAGGC_L004_R1_001.fastq.gz
 ```
 
-3. When complete, two files will be generated, a .html and a .zip. Open the .html file in your browser (by double-clicking, wherever you have it saved!)
+When complete, two files will be generated, a .html and a .zip. Open the .html file in your browser (by double-clicking, wherever you have it saved!)
 
 Now we'll go through and compare our results.
 
-### Trimming
+### 2. Trimming with bbduk
 
+This involves two steps: trimming adapters, and removing low quality sequence. 
+
+In the terminal, navigate to wherever the raw file is, and do the following:
+
+```
+$ ~/software/bbmap/bbduk.sh -Xmx1g in=Akle_TTAGGC_L004_R1_001.fastq.gz out=temp.fastq ref=~/software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
+
+$ ~/software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=trimmed_Akle_TTAGGC_L004_R1_001.fastq qtrim=rl trimq=10
+```
 
 
 
