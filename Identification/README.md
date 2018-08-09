@@ -1,7 +1,7 @@
 **UNDER CONSTRUCTION**
 
 
-Identification: BLAST
+Identification
 ----
 
 ### [The BLAST Manual](https://www.ncbi.nlm.nih.gov/books/NBK1762/)
