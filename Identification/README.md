@@ -33,3 +33,5 @@ It's possible to download only portions of the nr by pasting the following in yo
 I may decide that this is more appropriate, depending on how long downloads are taking.
 
 ----
+
+**Add: blasting selections of contigs**
