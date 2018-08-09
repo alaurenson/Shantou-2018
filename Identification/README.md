@@ -27,6 +27,9 @@ $ sudo wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
 $ gunzip nr.gz
 ```
 
-It's possible to download only portions of the nr by going to ftp://ftp.ncbi.nlm.nih.gov/blast/db/. I may decide that this is more appropriate, depending on how long downloads are taking.
+It's possible to download only portions of the nr by pasting the following in your browser:
+> ftp://ftp.ncbi.nlm.nih.gov/blast/db/. 
+
+I may decide that this is more appropriate, depending on how long downloads are taking.
 
 ----
