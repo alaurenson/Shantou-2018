@@ -57,7 +57,7 @@ $ ls -l
 
 # Now the permissions line should look like this: -rwxr--r--. That "x" makes all the difference. 
 ```
-Cool, onward!
+Cool. Onward!
 
 You'll each recieve a set of raw reads, the file will be called something like this:
 > Akle_TTAGGC_L004_R1_001.fastq.gz
@@ -78,8 +78,11 @@ This involves two steps: trimming adapters, and removing low quality sequence.
 In the terminal, navigate to wherever the raw file is, and do the following:
 
 ```
+# Remove any identified adapter sequences - bbduk has an internal database of common adapters that it checks against.
+# Here, "in"
 $ ~/software/bbmap/bbduk.sh -Xmx1g in=Akle_TTAGGC_L004_R1_001.fastq.gz out=temp.fastq ref=~/software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
 
+# Remove low-quality sequences/ 
 $ ~/software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=trimmed_Akle_TTAGGC_L004_R1_001.fastq qtrim=rl trimq=10
 ```
 
