@@ -3,17 +3,16 @@ Now that we've built assemblies, it's time to identify 'Open Reading Frames' (OR
 
 ----
 
+## TransDecoder - Generalized Procedure
+
+----
+
 ### Software
 - [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki)
 - [HMMER3](http://hmmer.janelia.org)
 
 ### PfamA Database
 - Download this file: ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
-
-----
-
-## Running TransDecoder - Generalized Procedure
-Basic steps, from the TransDecoder wiki:
 
 ### Predicting coding regions from a transcript fasta file 
 
@@ -65,7 +64,8 @@ The final coding region predictions will now include both those regions that hav
 
 The final set of candidate coding regions can be found as files '*.transdecoder.*' where extensions include .pep, .cds, .gff3, and .bed
 
------
+----
+----
 
 ## OrthoFinder
 
@@ -98,6 +98,7 @@ FastME can be obtained from http://www.atgc-montpellier.fr/fastme/binaries.php. 
 
 - `sudo cp fastme-2.1.5-linux64 /usr/local/bin/fastme`
 
+----
 ----
 
 **Add: End w/ MSAs of gene families (eg/ find orthogroup, ID w/ HMM and BLAST data, Perform MSA w/ MUSCLE)**
