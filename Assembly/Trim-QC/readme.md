@@ -62,33 +62,47 @@ Cool. Onward!
 You'll each recieve a set of raw reads, the file will be called something like this:
 > Akle_TTAGGC_L004_R1_001.fastq.gz
 
+This example will reflect THIS filename. Make sure when you're working to use YOUR file instead.
+
 Next, use FastQC to generate a quality report. Navigate in your terminal to the directory with your fastq file and do the following:
 ```
 $ ~/Desktop/bio_software/FastQC/fastqc ./Akle_TTAGGC_L004_R1_001.fastq.gz
 ```
-
 When complete, two files will be generated, a .html and a .zip. Open the .html file in your browser (by double-clicking, wherever you have it saved!)
 
 Now we'll go through and compare our results.
+
+----
 
 ### 2. Trimming with bbduk
 
 This involves two steps: trimming adapters, and removing low quality sequence. 
 
-In the terminal, navigate to wherever the raw file is, and do the following:
-
+In the terminal, navigate to wherever your raw file is, and do the following:
 ```
 # Remove any identified adapter sequences - bbduk has an internal database of common adapters that it checks against.
 # "in" is set to my reads file (exactly as I recieved it). You need to alter this to reflect your file.
-# "out" is set as "temp".fastq, for "temporary". You may leave this as it is. 
+# "out" is set as "temp.fastq", for "temporary". You may leave this as it is, or change it. 
 # "ref" is the "reference" that bbduk uses to identify adapter sequence. 
-# The other parameters
-$ ~/software/bbmap/bbduk.sh -Xmx1g in=Akle_TTAGGC_L004_R1_001.fastq.gz out=temp.fastq ref=~/software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
+# The other parameters are explained in the bbduk manual.
+
+$ ~Desktop/bio_software/bbmap/bbduk.sh -Xmx1g in=Akle_TTAGGC_L004_R1_001.fastq.gz out=temp.fastq ref=~Desktop/bio_software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
 
 # Remove low-quality sequences/ 
-$ ~/software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=trimmed_Akle_TTAGGC_L004_R1_001.fastq qtrim=rl trimq=10
+# "in" is set to the outfile from the previous step, "temp.fastq"
+# "out" is set to a a new fastq file beginning with "trimmed", so we can tell it apart from the raw file.
+# The other parameters are explained in the bbduk manual.
+
+$ ~Desktop/bio_software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=trimmed_Akle_TTAGGC_L004_R1_001.fastq qtrim=rl trimq=10
 ```
+----
 
+### 3. Run FastQC on the trimmed data
 
+Now, like you did in step 1, run FastQC on your new trimmed file. 
+
+(Note - You don't need to set the permission again, you already did that!)
+
+----
 
 
