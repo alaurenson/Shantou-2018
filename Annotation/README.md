@@ -67,3 +67,4 @@ The final set of candidate coding regions can be found as files '*.transdecoder.
 
 -----
 
+**Add: End w/ MSAs of gene families (eg/ find orthogroup, ID w/ HMM and BLAST data, Perform MSA w/ MUSCLE)**
