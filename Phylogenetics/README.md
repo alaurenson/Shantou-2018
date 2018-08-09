@@ -40,3 +40,4 @@ FastME can be obtained from http://www.atgc-montpellier.fr/fastme/binaries.php. 
 
 ----
 
+**Add: RAxML, Mr. Bayes**
