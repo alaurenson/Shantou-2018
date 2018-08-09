@@ -70,6 +70,7 @@ TransDecoder.Predict -t target_transcripts.fasta [ homology options ]
 ```
 The final set of candidate coding regions can be found as files '*.transdecoder.*' where extensions include .pep, .cds, .gff3, and .bed
 
+**Add: Running TransDecoder** 
 ----
 
 ## OrthoFinder
@@ -103,10 +104,7 @@ FastME can be obtained from http://www.atgc-montpellier.fr/fastme/binaries.php. 
 
 - `sudo cp fastme-2.1.5-linux64 /usr/local/bin/fastme`
 
-----
-
-**Add: Running TransDecoder** 
-
 **Add: Running OrthoFinder**
+----
 
 **Add: MSAs of gene families (eg/ find orthogroup, ID w/ HMM and BLAST data, Perform MSA w/ MUSCLE)**
