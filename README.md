@@ -22,6 +22,4 @@ How do we identify open reading frames? How do we quantify expresison?
 #### 5. [Phylogenetics](https://github.com/chazgoo/Shantou-2018/tree/master/Phylogenetics)
 Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs. 
 
-**Add: RAxML, Mr. Bayes**
-
 ----
