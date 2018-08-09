@@ -10,7 +10,9 @@ Now that we've built assemblies, it's time to identify 'Open Reading Frames' (OR
 - [HMMER3](http://hmmer.janelia.org)
 
 ### PfamA Database
-Download this file: ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+```
+$ sudo wget "ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz"
+```
 
 ### Predicting coding regions from a transcript fasta file 
 
