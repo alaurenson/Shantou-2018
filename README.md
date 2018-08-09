@@ -13,11 +13,11 @@ R: a programming language used for statistics and plotting data - we'll provide 
 #### 2. [The Data, QC, Assembly](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly)
 From raw sequence data to an assembled dataset, Trimming, QC, Assembly. 
 
-#### 3. [Annotation: HMMs, ORFs, & Quantification](https://github.com/chazgoo/Shantou-2018/tree/master/Annotation)
-How do we identify open reading frames? How do we quantify expresison? 
+#### 3. [Identification: BLAST!](https://github.com/chazgoo/Shantou-2018/tree/master/Identification)
+What genes are being transcribed? Why S. Altschull is the most cited biologist ever. Preparing a BLAST database and running the software.
 
-#### 4. [Identification: BLAST!](https://github.com/chazgoo/Shantou-2018/tree/master/Identification)
-What genes are being transcribed? Why S. Altschull is the most cited biologist ever. Preparing a BLAST database and running the software. 
+#### 4. [Annotation: HMMs, ORFs, & Quantification](https://github.com/chazgoo/Shantou-2018/tree/master/Annotation)
+How do we identify open reading frames? How do we quantify expresison? 
 
 #### 5. [Phylogenetics](https://github.com/chazgoo/Shantou-2018/tree/master/Phylogenetics)
 Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs. 
