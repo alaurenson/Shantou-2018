@@ -84,17 +84,20 @@ In the terminal, navigate to wherever your raw file is, and do the following:
 # "in" is set to my reads file (exactly as I recieved it). You need to alter this to reflect your file.
 # "out" is set as "temp.fastq", for "temporary". You may leave this as it is, or change it. 
 # "ref" is the "reference" that bbduk uses to identify adapter sequence. 
-# The other parameters are explained in the bbduk manual.
+# The other parameters are explained in the bbduk manual, link below.
 
 $ ~Desktop/bio_software/bbmap/bbduk.sh -Xmx1g in=Akle_TTAGGC_L004_R1_001.fastq.gz out=temp.fastq ref=~Desktop/bio_software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
 
 # Remove low-quality sequences/ 
 # "in" is set to the outfile from the previous step, "temp.fastq"
 # "out" is set to a a new fastq file beginning with "trimmed", so we can tell it apart from the raw file.
-# The other parameters are explained in the bbduk manual.
+# The other parameters are explained in the bbduk manual, link below.
 
 $ ~Desktop/bio_software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=trimmed_Akle_TTAGGC_L004_R1_001.fastq qtrim=rl trimq=10
 ```
+
+[BBDuk guide](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/)
+
 ----
 
 ### 3. Run FastQC on the trimmed data
