@@ -19,13 +19,9 @@ What genes are being transcribed? Why S. Altschull is the most cited biologist e
 #### 4. [Annotation: HMMs, ORFs, & Quantification](https://github.com/chazgoo/Shantou-2018/tree/master/Annotation)
 How do we identify open reading frames? How do we quantify expresison? 
 
-- End w/ MSAs of gene families (eg/ find orthogroup, ID w/ HMM and BLAST data, Perform MSA w/ MUSCLE)
-
 #### 5. [Phylogenetics](https://github.com/chazgoo/Shantou-2018/tree/master/Phylogenetics)
 Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs. 
 
--RAxML
-
--Mr. Bayes
+**Add: RAxML, Mr. Bayes**
 
 ----
