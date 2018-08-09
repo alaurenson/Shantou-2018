@@ -6,8 +6,8 @@ Now that we've built assemblies, it's time to identify 'Open Reading Frames' (OR
 ## TransDecoder
 
 ### Software
-[TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki)
-[HMMER3](http://hmmer.janelia.org)
+- [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki)
+- [HMMER3](http://hmmer.janelia.org)
 
 ### PfamA Database
 Download this file: ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
