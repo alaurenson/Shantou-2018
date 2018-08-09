@@ -2,11 +2,8 @@
 Now that we've built assemblies, it's time to identify 'Open Reading Frames' (ORFs) in our datasets - this will provide us with the most likely protein-coding sequences. We'll do this by predicting them based on Hidden Markov Models. First, download the necessary software and databases. 
 
 ----
-----
 
-### TransDecoder
-
-----
+## TransDecoder
 
 ### Software
 - [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki)
@@ -14,8 +11,6 @@ Now that we've built assemblies, it's time to identify 'Open Reading Frames' (OR
 
 ### PfamA Database
 - Download this file: ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
-
-----
 
 ### Predicting coding regions from a transcript fasta file 
 
@@ -68,11 +63,8 @@ The final coding region predictions will now include both those regions that hav
 The final set of candidate coding regions can be found as files '*.transdecoder.*' where extensions include .pep, .cds, .gff3, and .bed
 
 ----
-----
 
 ## OrthoFinder
-
-----
 
 Software for inferring orthologues between species
   - Input: peptide data in fasta format
@@ -103,7 +95,6 @@ FastME can be obtained from http://www.atgc-montpellier.fr/fastme/binaries.php. 
 
 - `sudo cp fastme-2.1.5-linux64 /usr/local/bin/fastme`
 
-----
 ----
 
 **Add: End w/ MSAs of gene families (eg/ find orthogroup, ID w/ HMM and BLAST data, Perform MSA w/ MUSCLE)**
