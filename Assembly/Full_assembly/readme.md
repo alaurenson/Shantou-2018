@@ -5,7 +5,11 @@ In the previous exercise, we used a single set of reads - your file looked somet
 
 Notice the "R1" in that file name. This refers to "Read 1" of a **pair** of "paired-end reads". There will be an associated "R2" file with the same name. 
 
-In addition, a ful set of NGS data will almost certainly consist of multiple pairs of read files. 
+------>
+---------
+  <------
+
+In addition, a full set of NGS data will almost certainly consist of multiple pairs of read files. 
 
 This is what the full set of raw data for Amphidinium klebsii ("Akle" in the filename) looks like:
 ```
