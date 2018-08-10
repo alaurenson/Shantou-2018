@@ -72,7 +72,7 @@ $ cat Akle_TTAGGC_L004_R1_001.fastq.gz Akle_TTAGGC_L004_R1_002.fastq.gz Akle_TTA
 $ cat *_R1_*.fastq.gz > Akle_R1.fastq.gz
 ```
 When possible to use them, regular expressions make life really easy. Here, `*_R1_*.fastq.gz` can be translated like so:
-> "match anything"_R1_"match anything".fastq.gz
+> "match anything"\_R1\_"match anything".fastq.gz
 
 This means that `cat` will go down the list of files and use each 'R1' file, in numeric order. 
 
