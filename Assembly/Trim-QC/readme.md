@@ -1,11 +1,11 @@
 QC, Trimming, and QC again!
 ----
 
-This effectively represents the beginning of any analysis of NGS (Next-Generation Sequencing) data. 
+This effectively represents the beginning of any analysis of NGS (Next-Generation Sequencing) data.
 
-Whether you are looking for differential gene expression in a de-novo transcriptome assembly, or doing a reference-guided genome assembly - any time you recieve sequence data, each sequence will contain a portion derived from the adapters used in sequencing. We need to get rid of these. This is called "trimming". 
+Whether you are looking for differential gene expression in a de-novo transcriptome assembly, or doing a reference-guided genome assembly - any time you recieve sequence data, each sequence will contain a portion derived from the adapters used in sequencing. We need to get rid of these. This is called "trimming".
 
-In addition, sequencer output files (in fastq format) are accompanied by quality scores. We also want to remove reads that are below acceptible quality thresholds to ensure that our data is biologically accurate. 
+In addition, sequencer output files (in fastq format) are accompanied by quality scores. We also want to remove reads that are below acceptible quality thresholds to ensure that our data is biologically accurate.
 
 ----
 
@@ -25,23 +25,23 @@ Essentially, this is what it says:
 [Scores]
 ```
 
-Here, each character in the score line represents a value of certainty for the accuracy of the base call. Different sequencing protocols have different notation, but in this example the scores are stronger later in the alphabet, and symbols are weakest. Thus J is good, B or ? is not so good. 
+Here, each character in the score line represents a value of certainty for the accuracy of the base call. Different sequencing protocols have different notation, but in this example the scores are stronger later in the alphabet, and symbols are weakest. Thus J is good, B or ? is not so good.
 
-A good trimming program will take the whole score into account, and use the average to decide whether or not to keep the read. 
+A good trimming program will take the whole score into account, and use the average to decide whether or not to keep the read.
 
 ----
 
 To demonstrate the neccesity of working with clean data, we are going to do the following:
 1. Use FastQC to assess the overall quality of a raw dataset
 2. Use BBDuk to trim out adapter sequences and low-quality reads
-3. Use FastQC to check the newly-trimmed dataset's overall quality. 
+3. Use FastQC to check the newly-trimmed dataset's overall quality.
 
 In the next section, we'll use RNASpades to assemble the trimmed dataset.
 
 ----
 
 ### 1. FastQC with raw data
-Set a permission. The fastqc program can be used many ways. Because we're going to run it directly, we need to set an "execute" permission. 
+Set a permission. The fastqc program can be used many ways. Because we're going to run it directly, we need to set an "execute" permission.
 ```
 # Navigate into the FastQC software directory
 $ cd ~/Desktop/bio_software/FastQC
@@ -55,7 +55,7 @@ $ chmod u+x fastqc
 # Check if it worked
 $ ls -l
 
-# Now the permissions line should look like this: -rwxr--r--. That "x" makes all the difference. 
+# Now the permissions line should look like this: -rwxr--r--. That "x" makes all the difference.
 ```
 Cool. Onward!
 
@@ -76,19 +76,19 @@ Now we'll go through and compare our results.
 
 ### 2. Trimming with bbduk
 
-This involves two steps: trimming adapters, and removing low quality sequence. 
+This involves two steps: trimming adapters, and removing low quality sequence.
 
 In the terminal, navigate to wherever your raw file is, and do the following:
 ```
 # Remove any identified adapter sequences - bbduk has an internal database of common adapters that it checks against.
 # "in" is set to my reads file (exactly as I recieved it). You need to alter this to reflect your file.
-# "out" is set as "temp.fastq", for "temporary". You may leave this as it is, or change it. 
-# "ref" is the "reference" that bbduk uses to identify adapter sequence. 
+# "out" is set as "temp.fastq", for "temporary". You may leave this as it is, or change it.
+# "ref" is the "reference" that bbduk uses to identify adapter sequence.
 # The other parameters are explained in the bbduk manual, link below.
 
 $ ~Desktop/bio_software/bbmap/bbduk.sh -Xmx1g in=Akle_TTAGGC_L004_R1_001.fastq.gz out=temp.fastq ref=~Desktop/bio_software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
 
-# Remove low-quality sequences/ 
+# Remove low-quality sequences/
 # "in" is set to the outfile from the previous step, "temp.fastq"
 # "out" is set to a a new fastq file beginning with "trimmed", so we can tell it apart from the raw file.
 # The other parameters are explained in the bbduk manual, link below.
