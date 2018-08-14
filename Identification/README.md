@@ -1,6 +1,3 @@
-Identification: our first look at the biological story behind our data 
-----
-
 ### BLAST+ (Basic Local Alignment Search Tool)
 
 #### [The BLAST Guide](https://www.ncbi.nlm.nih.gov/books/NBK1762/)
@@ -55,11 +52,12 @@ nohup nice ~/Path/To/Blast_program_files/blastx -db ~/Path/To/database.fasta -qu
 
 ### Instruction for the black-box method
 
-We're going to use blast an arbitrary selection of our assembled data. Later in the course (after some further analysis) we'll choose more specific blast targets.  
+Today, we're going to use blast on an arbitrary selection of our assembled data so that we can get a feel for what kind of output the program can provide, and to take a look at the identity of some of our assembled contigs. We'll start with a single sequence, and see where we can get!
 
-> Add: blasting selections of contigs
-  - **today**, top 20 longest assembled contigs (via grep -20 ">" > sample.txt?)
-  - **later**, we'll look at highest expressing (via kallisto?), specific orthogroups (via Orthofinder?), etc...
+Later in the course (after some further analysis) we'll choose more specific blast targets. For example:  
+  - Highest expressing (via kallisto expression data) 
+  - Specific orthogroups (via Orthofinder)
+  - etc...
 
 
 
