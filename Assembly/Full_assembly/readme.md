@@ -2,7 +2,7 @@
 
 ### First, some comments on how we're going to approach the rest of this course:
 
-Now that we're beginning to deal with full datasets, we've gotten to the point where our personal laptops may struggle to handle such work, at least in a reasonable amount of time... A large assembly could take a WEEK or more, even on very good machines.
+Now that we're beginning to deal with full datasets, we've gotten to the point where our personal laptops may struggle to handle such work, at least in a reasonable amount of time... A large assembly could take a week or more, even on very good machines.
 
 In bioinformatics, we'll often make use of powerful remote servers, or computer clusters, or even cloud computing (via services like Amazon) to accomplish our goals. Where your laptop might have a CPU with 4 or 8 cores, a server will have 24 CPUs with 8 cores each. Usually, we operate servers through the terminal, much like we've been doing - so it should hopefully feel familiar!
 
@@ -96,7 +96,7 @@ $ cat Akle_TTAGGC_L004_R1_001.fastq.gz Akle_TTAGGC_L004_R1_002.fastq.gz Akle_TTA
 # The easy (but possible to screw up) way: regular expressions!
 $ cat *_R1_*.fastq.gz > Akle_R1.fastq.gz
 ```
-When possible to use them, regular expressions make life really easy. Here, `*_R1_*.fastq.gz` can be translated like so:
+When possible to use them, regular expressions make life easy. Here, `*_R1_*.fastq.gz` can be translated like so:
 > "match anything"\_R1\_"match anything".fastq.gz
 
 This means that `cat` will go down the list of files and use each 'R1' file, in numeric order.
@@ -124,7 +124,7 @@ $ nohup nice ~/Desktop/bio_software/SPAdes-3.11.1-Linux/bin/spades.py --rna --pe
 ```
 
 While this single line of code is short, it accomplishes a great deal. Let's talk about what we see:
-- **nohup** `code` **&**: Any time you run a large job, it should always be wrapped in these two commands. What this does is tell the computer to run the job in the background "with no hang-up". This means if you're operating a server remotely, the server will continue to work even if you close the terminal. It also means you can't see the program output unless you check the 'nohup.out' log file. We'll use this extensively - it's important in big data processing.
+- **nohup** `code` **&**: Any time you run a large job on a server, it should always be wrapped in these two commands. What this does is tell the computer to run the job in the background "with no hang-up". This means if you're operating a server remotely, the server will continue to work even if you close the terminal. It also means you can't see the program output unless you check the 'nohup.out' log file. We'll use this extensively - it's important in big data processing.
 
 - Next you'll see `~/Desktop/bio_software/SPAdes-3.11.1-Linux/bin/spades.py --rna`, which is the call to our assembler (SPAdes) to do an RNA-data assembly. You should now recognize that this is very often how we call programs. In this case, you need to include everything exactly as I have it written.
 
