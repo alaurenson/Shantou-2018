@@ -1,3 +1,5 @@
+**UNDER CONSTRUCTION**
+
 ### Identification: BLAST+ (Basic Local Alignment Search Tool)
 
 #### [The BLAST Guide](https://www.ncbi.nlm.nih.gov/books/NBK1762/)
@@ -59,8 +61,7 @@ Later in the course (after some further analysis) we'll choose more specific bla
   - Specific orthogroups (via Orthofinder)
   - etc...
 
-
-
+Without further ado, let's try it out!
 
 ```
 awk "/^>/ {n++} n>10 {exit} {print}" assembly_file.fasta > sample_file.fasta
