@@ -2,8 +2,6 @@
 
 ## Phylogenetic Analysis
 
-----
-
 > Add: RAxML, Mr. Bayes
 
 ### FigTree
