@@ -1,12 +1,23 @@
-Identification
+Identification: our first look at the biological story behind our data 
 ----
 
-### [The BLAST Manual](https://www.ncbi.nlm.nih.gov/books/NBK1762/)
+### BLAST+ (Basic Local Alignment Search Tool)
+
+#### [The BLAST Guide](https://www.ncbi.nlm.nih.gov/books/NBK1762/)
 
 > Add: Links to Altschul papers
 
-#### BLAST+
-NCBI BLAST+ is available in the repositories from most Linux distributions and so can be installed in the same way as any other package. For example, on Ubuntu, Debian, Linux Mint:
+> Add: Flavors of Blast
+
+> Add: Black Box vs. Manual runs, advantages and disadvantages of both
+
+----
+
+### Installation and Instruction for Manual Opperation
+
+*I'm including this for your future perusal! In class we'll actually be using the black-box method.* 
+
+NCBI BLAST and its several variants are available in the repositories from most Linux distributions and so can be installed in the same way as any other package. For example, on Ubuntu, Debian, Linux Mint:
 
 ```
 sudo apt-get install ncbi-blast+
@@ -16,38 +27,54 @@ Alternatively, instructions are provided for installing BLAST+ on Mac, Windows, 
 
 The download itself may be found [here](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
 
-In addition to the software, you'll want to download the "non-redundant blast database"; this is a list of every sequence that NCBI has accrued. There are a lot. This is a big file. All of this might take a little while.
+In addition to the software, you'll need a database for comparing your data. For the most thorough possible job, you'll want to download the "non-redundant blast database"; this is a list of every sequence that NCBI has accrued. There are a lot. This is a big file. All of this might take a little while.
 
 ```
-# Make a new directory for blast stuff
-$ mkdir ~/Desktop/blast; cd ~/Desktop/blast
-
-# Download the nr database
+# Download the nr database 
+# Make sure to navigate to the directory where you want it to go!
 $ sudo wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz
 
-# Unzip
+# Unzip prior to use
 $ gunzip nr.gz
 ```
 
 While blasting against the NCBI nr database is the most thorough option, it isn't always feasible, nor is it always necessary! It's possible to download only portions of the nr by pasting the following in your browser:
 > ftp://ftp.ncbi.nlm.nih.gov/blast/db/
 
-I may decide that this is more appropriate, depending on how long downloads are taking.
+
+And here's a sample workthrough with blastx:
+```
+# Make a blast database - either with the nr data, or with a custom selection
+$ ~/Path/To/Blast_program_files/makeblastdb -in ~/Path/To/Data/nr.fasta -dbtype dna
+
+# Call the blast
+nohup nice ~/Path/To/Blast_program_files/blastx -db ~/Path/To/database.fasta -query ~/Path/To/Assembly.fasta -evalue 0.00001 -num_threads 16 -outfmt "7 qseqid qlen sseqid slen qstart qend sstart send evalue bitscore length pident gaps" -out ~/Path/To/Assembly_blastx.out &
+```  
 
 ----
 
-### For our exercise today, we're going to blast only an arbitrary selection of our assembled data against the nr database. Later in the course (after some further analysis) we'll choose more specific blast targets.  
+### Instruction for the black-box method
+
+We're going to use blast an arbitrary selection of our assembled data. Later in the course (after some further analysis) we'll choose more specific blast targets.  
 
 > Add: blasting selections of contigs
-  - today, top 20 longest assembled contigs (via grep -20 ">" > sample.txt?)
-  - later, we'll look at highest expressing (via kallisto?), specific orthogroups (via Orthofinder?), etc...
-  - Also blastx w/ uniprot data.
+  - **today**, top 20 longest assembled contigs (via grep -20 ">" > sample.txt?)
+  - **later**, we'll look at highest expressing (via kallisto?), specific orthogroups (via Orthofinder?), etc...
 
-Here's a sample workthrough with blastx:
+
+
+
 ```
-# Make a blast database - either with the nr data, or with a custom selection
-$ ~/Path/To/Blast/makeblastdb -in ~/Path/To/Data/nr.fasta -dbtype dna #(Charlie, check this! Is nr.gz already formatted?)
+awk "/^>/ {n++} n>10 {exit} {print}" assembly_file.fasta > sample_file.fasta
+```
 
-# Call the blast
-nohup nice blastx -db ~/Path/To/Data/database.fasta -query ~/Path/To/Assembly.fasta -evalue 0.00001 -num_threads 16 -outfmt "7 qseqid qlen sseqid slen qstart qend sstart send evalue bitscore length pident gaps" -out ~/Path/To/Assembly_blastx.out &
-```  
+An awk script consists of one or more statements of the form: **pattern {actions}**. The input is read line-by-line, and if the current line matches the pattern, the corresponding actions are executed.
+
+Our script consists of 3 such statements:
+
+1. /^>/ {n++} increments the counter each time a new sequence is started. /.../ denotes a regular expression pattern, and ^> is a regular expression that matches the > sign at the beginning of a line. An uninitialized variable in awk has the value 0, which is exactly what we want here. If we needed some other initial value (say, 1), we could have added a BEGIN pattern like this: BEGIN {n=1}.
+
+2. n>$NSEQS {exit} aborts processing once the counter reaches the desired number of sequences.
+
+3. {print} is an action without a pattern (and thus matching every line), which prints every line of the input until the script is aborted by exit.
+
