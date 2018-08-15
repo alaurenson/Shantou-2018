@@ -56,7 +56,9 @@ $ ls
 # Check your "present working directory"
 $ pwd
 ```
-> Because we downloaded the folder directly, our data isn't where exercise U5 says it is. The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - **our file is located at /Desktop/bash_practice/Unix_and_Perl_course**. Going forward, you can follow the exercises without a problem if you remember where our file is! This is good practice for developing your directory awareness.
+Because we downloaded the folder directly, our data isn't where exercise U5 says it is. The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - **our file is located at /Desktop/bash_practice/Unix_and_Perl_course**. Going forward, you can follow the exercises without a problem if you remember where our file is! This is good practice for developing your directory awareness.
+
+### This means: any time the Unix and Perl Primer says /Volumnes/USB/Unix_and_Perl_course, WE will use /Desktop/bash_practice/Unix_and_Perl_course!
 
 4. From here, we should be able to continue together from U6 onward - hopefully we can get to U36!
 
