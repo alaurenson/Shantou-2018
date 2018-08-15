@@ -4,13 +4,13 @@
 
 There are two ways you can download the files:
 
-1. Follow this link: [Unix and Perl Primer for Biologists - v3.1.2](http://korflab.ucdavis.edu/Unix_and_Perl/index.html). 
+1. **The backup plan!** Follow this link: [Unix and Perl Primer for Biologists - v3.1.2](http://korflab.ucdavis.edu/Unix_and_Perl/index.html). 
 
 From there, scroll down to v3.1.2, and download "all course material". 
 
 Make a folder on your desktop called bash_practice, and place the download in there. Unzip the file. 
 
-2. If you want to jump right in, open a new terminal window and type the following to achieve the same thing:
+2. **Jump right into UNIX with this:** open a new terminal window and type the following to achieve the same thing:
 ```
 # NOTE: This is a code block. This is how I'll share commands!
 # All comments will start with '#', don't type out comments - these are for your understanding only.
@@ -30,7 +30,7 @@ $ wget "http://korflab.ucdavis.edu/Unix_and_Perl/current.zip"
 # Look at what's in the directory
 $ ls
 
-# Unzip the file
+# Unzip the file - Windows users may get an error! Let me know and I can help you fix it!
 $ unzip current.zip
 
 # Remove the .zip file
@@ -43,9 +43,9 @@ Notice, the bash commands do exactly the same thing! It's just a different way o
 
 1. Navigate (as you normally would) to the folder we just downloaded - go into "Unix_and_Perl_course", and open the pdf file "unix_and_perl_primer_v3.1.2.pdf"
 
-2. Go to p.13, and follow exercises U1, U2, U3, and U4 
+2. We'll skip ahead to U7 - we already did U1-U6 in the previous steps of downloading. Know that you can always review them.  
 
-3. Instead of U5, open a new terminal window and type the following:
+3. Open a new terminal window and type the following:
 ```
 # Change to the desired directory
 $ cd Desktop/bash_practice/Unix_and_Perl_course
@@ -56,11 +56,11 @@ $ ls
 # Check your "present working directory"
 $ pwd
 ```
-> Because we downloaded the folder directly, our data isn't where exercise U5 says it is. The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - **our file is located at /Desktop/bash_practice/Unix_and_Perl_course**. Going forward, you can follow the exercises without a problem if you remember where our file is! This is good practice for developing your directory awareness.
+> Because we downloaded the folder directly, our data isn't where exercise U7 says it is. The PDF will continually refer to /Volumes/USB/Unix_and_Perl_course - **our file is located at .../Desktop/bash_practice/Unix_and_Perl_course**. Going forward, you can follow the exercises without a problem if you remember where our file is! This is good practice for developing your directory awareness.
 
 #### If Unix_and_Perl_Primer says `/Volumnes/USB/Unix_and_Perl_course`, use `.../Desktop/bash_practice/Unix_and_Perl_course`!
 
-4. From here, we should be able to continue together from U6 onward - hopefully we can get to U36!
+4. From here, we should be able to continue together from U7 onward - hopefully we can get to U36!
 
 I realize there are a lot of commands to learn: don't worry about memorizing them - I promise that you will eventually learn them through use!
 
