@@ -60,6 +60,10 @@ $ pwd
 
 #### If Unix_and_Perl_Primer says `/Volumnes/USB/Unix_and_Perl_course`, use `.../Desktop/bash_practice/Unix_and_Perl_course`!
 
+#### Mac and Linux users, `...` will refer to `~`, your home directory. You can always just type `~/Desktop...`
+
+#### Windows users, it's a little more complicated! `...` will refer to `/mnt/c/Users/Your_name`, so to navigate to your desktop you'll actually have to type `/mnt/c/Users/Your_name/Desktop`. This is because we're running UNIX on top of windows. Unfortunately it just doesn't work as easily. 
+
 4. From here, we should be able to continue together from U7 onward - hopefully we can get to U36!
 
 I realize there are a lot of commands to learn: don't worry about memorizing them - I promise that you will eventually learn them through use!
