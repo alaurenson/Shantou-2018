@@ -10,7 +10,7 @@ Bash: basic commands and navigation, directory structure, shell vs. kernel, pipe
 
 R: a programming language used for statistics and plotting data - we'll provide a basic intro.
 
-#### [Day 2 bash stuff](https://github.com/chazgoo/Shantou-2018/tree/master/day_2_bash.md)
+#### [Day 2 bash stuff](https://github.com/chazgoo/Shantou-2018/blob/master/UNIX/bash/day2bash.md)
 
 ### 2. [The Data, QC, Assembly](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly)
 From raw sequence data to an assembled dataset: Trimming, QC, Assembly. 
