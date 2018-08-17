@@ -61,6 +61,8 @@ $ cd ~/Desktop; mkdir bio_software; cd bio_software
 
 4. To assemble our cleaned-up data: [**RNAspades**](http://cab.spbu.ru/software/rnaspades/)
 
+If you're feeling brave:
+
 Windows & Linux:
 ```
 $ wget http://cab.spbu.ru/files/release3.12.0/SPAdes-3.12.0-Linux.tar.gz
