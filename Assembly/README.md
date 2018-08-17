@@ -14,6 +14,9 @@ We'll begin, as usual, by obtaining all of the necessary software.
 - [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 To check whether you have them:
+
+Open a command prompt like we used today - do NOT type `bash`! Use the normal windows command prompt.
+
 ```
 # For Python, you'll notice the command line change from bash's '$' to Python's '>>>'. 
 $ python
