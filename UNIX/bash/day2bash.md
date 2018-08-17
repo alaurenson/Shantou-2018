@@ -1,6 +1,6 @@
 ## Day 2: Guided bash exercise
 
-Today, we're going to do things a little differently!
+Today, we're going to do things a little differently
 
 NO DOWNLOADS!
 
