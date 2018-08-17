@@ -337,12 +337,14 @@ $ ls -a
 ```
 
 Notice that there's nothing? We haven't written any code yet.
-	
+
+```
 $ touch hello.sh
-$ sh is for 'shell script'
 	
 $ nano hello.sh
-$ type this exactly:
+```
+
+type this exactly:
 
 ```
 # my first Unix shell script  
