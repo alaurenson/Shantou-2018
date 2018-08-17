@@ -10,8 +10,8 @@ We'll begin, as usual, by obtaining all of the necessary software.
 #### Most programs that we'll use rely on other software in order to run properly. You probably have some or all of them already. 
  
 - [Python]()
-- [Java Runtime Environment (JRE)](https://www.java.com/en/)
-- [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+- [Java Runtime Environment (JRE)](https://www.java.com/en/): This link is broken! Don't use it yet. 
+- [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) This link is broken too. 
 
 To check whether you have them:
 
