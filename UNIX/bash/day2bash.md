@@ -343,10 +343,12 @@ $ sh is for 'shell script'
 	
 $ nano hello.sh
 $ type this exactly:
-	
-> # my first Unix shell script  
-> echo "Hi there world!"
-	
+
+```
+# my first Unix shell script  
+echo "Hi there world!"
+```
+
 - ctrl+O, Enter, ctrl X
 	
 Now do this:
