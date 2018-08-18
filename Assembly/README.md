@@ -12,9 +12,9 @@ We'll begin, as usual, by obtaining all of the necessary software.
 - [Python](https://www.python.org/downloads/)
 - [Java Runtime Environment (JRE) and Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-To check whether you have them:
+### Before downloading, first check whether you have them!
 
-Open a command prompt like we used today - do NOT type `bash`! Use the normal windows command prompt.
+Open a command prompt like we used today - do NOT type `bash` -  Use the normal command prompt. For mac people, the same. 
 
 ```
 # For Python, you'll notice the command line change from bash's '$' to Python's '>>>'. 
