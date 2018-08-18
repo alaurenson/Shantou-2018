@@ -9,7 +9,7 @@ We'll begin, as usual, by obtaining all of the necessary software.
 ### Software & Dependencies  
 #### Most programs that we'll use rely on other software in order to run properly. You probably have some or all of them already. 
  
-- [Python](http://mydown.yesky.com/pcsoft/33506133.html)
+- [Python](https://www.python.org/downloads/)
 - [Java Runtime Environment (JRE) and Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 To check whether you have them:
