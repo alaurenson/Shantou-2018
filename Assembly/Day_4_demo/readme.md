@@ -34,7 +34,7 @@ cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/b
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=Akle_R1.fastq qtrim=rl trimq=10
 
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=Akle_R2.fastq qtrim=rl trimq=10
-``
+```
 
 
 ### Run FastQC on the trimmed reads
