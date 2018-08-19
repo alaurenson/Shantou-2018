@@ -113,7 +113,7 @@ MOST IMPORTANTLY, notice that all of the R1 files and all of the R2 files are co
 - Why is it important not to mix R1 and R2?
 
 
-### Run FastQC on the raw reads
+### Run FastQC on the raw reads [**FastQC**](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
 ```
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ nohup ~/software/FastQC/fastqc Akle_raw_R1.fastq.gz &
@@ -121,7 +121,7 @@ cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ nohup ~/software
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ nohup ~/software/FastQC/fastqc Akle_raw_R2.fastq.gz &
 ```
 
-### Trim the data using bbduk
+### Trim the data using [**BBduk**](https://sourceforge.net/projects/bbmap/)
 
 ```
 # Remove adapters
@@ -151,7 +151,7 @@ Quality trimming:
 - qtrim=rl: quality trim both right and left sides 
 - trimq=10: Trim to quality Q10
 
-### Run FastQC on the trimmed reads
+### Run [**FastQC**](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) on the trimmed reads
 
 ```
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ nohup ~/software/FastQC/fastqc Akle_R1.fastq.gz &
@@ -163,7 +163,7 @@ cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ nohup ~/soft
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ nohup: ignoring input and appending output to 'nohup.out'
 ```
 
-### Call the assembly with RNAspades
+### Call the assembly with [**RNAspades**](http://cab.spbu.ru/software/rnaspades/)
 
 ```
 nice ~/software/SPAdes-3.11.1-Linux/bin/spades.py --rna --pe1-1 /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed/Akle_R1.fastq.gz --pe1-2 /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed/Akle_R2.fastq.gz -o /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/assembled/spades;
