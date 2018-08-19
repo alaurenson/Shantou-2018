@@ -166,5 +166,5 @@ cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ nohup: ignor
 ### Call the assembly with [**RNAspades**](http://cab.spbu.ru/software/rnaspades/)
 
 ```
-nice ~/software/SPAdes-3.11.1-Linux/bin/spades.py --rna --pe1-1 /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed/Akle_R1.fastq.gz --pe1-2 /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed/Akle_R2.fastq.gz -o /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/assembled/spades;
+$ nice ~/software/SPAdes-3.11.1-Linux/bin/spades.py --rna --pe1-1 /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed/Akle_R1.fastq.gz --pe1-2 /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed/Akle_R2.fastq.gz -o /home/cagood/Shantou_2018/Seq_data/Amphidinium_klebsii/assembled/spades;
 ```
