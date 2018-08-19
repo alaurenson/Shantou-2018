@@ -12,12 +12,8 @@ cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ cat Akle_TTAGGC_
 
 ```
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ nohup ~/software/FastQC/fastqc Akle_raw_R1.fastq.gz &
-[1] 9183
-cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ nohup: ignoring input and appending output to 'nohup.out'
 
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ nohup ~/software/FastQC/fastqc Akle_raw_R2.fastq.gz &
-[2] 9206
-cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ nohup: ignoring input and appending output to 'nohup.out'
 ```
 
 ### Trim the data using bbduk
