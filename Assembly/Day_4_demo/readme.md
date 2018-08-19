@@ -1,4 +1,4 @@
-## Working with *Amphidinium klebsii
+## Working with *Amphidinium klebsii*
 
 This effectively represents the beginning of any analysis of NGS (Next-Generation Sequencing) data.
 
