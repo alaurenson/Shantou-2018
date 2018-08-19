@@ -15,7 +15,7 @@ R: a programming language used for statistics and plotting data - we'll provide 
 ### 2. [The Data, QC, Assembly](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly)
 From raw sequence data to an assembled dataset: Trimming, QC, Assembly.
 
-- **[Day 4 Demo](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly/Day_4_demo)
+- **[Day 4 Demo](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly/Day_4_demo)**
 
 ### 3. [Identification: BLAST!](https://github.com/chazgoo/Shantou-2018/tree/master/Identification)
 What genes are being transcribed? Why S. Altschull is the most cited biologist ever. Black-box vs. manual operation. Preparing a BLAST database and running the software.
