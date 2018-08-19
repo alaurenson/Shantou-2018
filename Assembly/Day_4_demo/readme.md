@@ -171,4 +171,4 @@ $ nice ~/software/SPAdes-3.11.1-Linux/bin/spades.py --rna --pe1-1 /home/cagood/S
 
 ----
 
-### [VERY basic assembly data visualization in R]()
+### [VERY basic assembly data visualization in R](https://github.com/chazgoo/Shantou-2018/blob/master/Assembly/Day_4_demo/data_vis.md)
