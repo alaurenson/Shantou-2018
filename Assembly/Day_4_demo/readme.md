@@ -1,4 +1,6 @@
-## Working with *Amphidinium klebsii* - in class I'll show this process with *Tetraselmis suecica*
+## Working with *Amphidinium klebsii* 
+
+**In class I'll show this process with *Tetraselmis suecica* data**
 
 This effectively represents the beginning of any analysis of NGS (Next-Generation Sequencing) data.
 
