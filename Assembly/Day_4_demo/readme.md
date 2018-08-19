@@ -1,7 +1,5 @@
 ## Working with *Amphidinium klebsii* 
 
-**In class I'll show this process with *Tetraselmis suecica* data**
-
 This effectively represents the beginning of any analysis of NGS (Next-Generation Sequencing) data.
 
 Whether you are looking for differential gene expression in a de-novo transcriptome assembly, or doing a reference-guided genome assembly - any time you recieve sequence data, each sequence will contain a portion derived from the adapters used in sequencing. We need to get rid of these. This is called "trimming".
