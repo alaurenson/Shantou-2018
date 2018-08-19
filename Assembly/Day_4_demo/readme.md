@@ -88,6 +88,9 @@ We *should* be able to call `$ cat *_R1_*.fastq.gz > Akle_R1.fastq.gz` and `$ ca
 
 This can very easily be done *incorrectly*, especially if you don't keep in mind what's in your current working directory. What if there were **Tsue** files mixed in with **Akle**??
 
+
+
+
 **The commands I used**
 ```
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ cat Akle_TTAGGC_L004_R1_* > Akle_raw_R1.fastq.gz
@@ -123,9 +126,9 @@ cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/raw$ nohup ~/software
 ```
 # Remove adapters
 
-cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/bbmap/bbduk.sh -Xmx1g in=Akle_raw_R1.fastq.gz out=temp.fastq ref=~~/software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
+cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/bbmap/bbduk.sh -Xmx1g in=Akle_raw_R1.fastq.gz out=temp.fastq ref=~/software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
 
-cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/bbmap/bbduk.sh -Xmx1g in=Akle_raw_R2.fastq.gz out=temp.fastq ref=~~/software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
+cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/bbmap/bbduk.sh -Xmx1g in=Akle_raw_R2.fastq.gz out=temp.fastq ref=~/software/bbmap/resources/adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
 
 # Remove low quality reads
 
@@ -134,6 +137,19 @@ cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/b
 cagood@benthos:~/Shantou_2018/Seq_data/Amphidinium_klebsii/trimmed$ ~/software/bbmap/bbduk.sh -Xmx1g in=temp.fastq out=Akle_R2.fastq qtrim=rl trimq=10
 ```
 
+**Notes on command parameters:**
+Adapter removal:
+- -Xmx1g: forces the computer to limit the job to 1Gb
+- ktrim=r: sets the run to be "right-trimming", standard for adapter trimming
+- k=23: k-mer size to use 
+- mink=11: Use shorter k-mers at the (right) end of the read, where adapters are 
+- hdist=1: "hamming distance", allows for one mismatch in a kmer 
+- tpe: trim paired reads to the same length 
+- tbo: trim based on pair-overlap detection
+
+Quality trimming:
+- qtrim=rl: quality trim both right and left sides 
+- trimq=10: Trim to quality Q10
 
 ### Run FastQC on the trimmed reads
 
