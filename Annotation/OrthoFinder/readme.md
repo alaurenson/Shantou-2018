@@ -29,4 +29,6 @@ FastME can be obtained from http://www.atgc-montpellier.fr/fastme/binaries.php. 
 
 - `sudo cp fastme-2.1.5-linux64 /usr/local/bin/fastme`
 
-> Add: Running OrthoFinder
+----
+
+## [OrthoFinder Manual](https://github.com/davidemms/OrthoFinder)
