@@ -1,14 +1,45 @@
-**UNDER CONSTRUCTION**
-
 ### Identification: BLAST+ (Basic Local Alignment Search Tool)
 
 #### [The BLAST Guide](https://www.ncbi.nlm.nih.gov/books/NBK1762/)
 
-> Add: Links to Altschul papers
+### Flavors of blast
 
-> Add: Flavors of Blast
+- **[blastn](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)**: DNA sequence vs. DNA database
+- **[blastp](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)**: Protein sequence vs. protein database
+- **[blastx](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastx&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)**: Take DNA sequence, predict protein coding sequence, and compare to a protein database
+- **[tblastn](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)**: the reverse - take protein sequence, predict the DNA sequence, and compare to a DNA database
 
-> Add: Black Box vs. Manual runs, advantages and disadvantages of both
+Stephen Altshul's BLAST algorithm is the most widely-used sequence comparison process used in modern biology: he is the most highly cited academic author today. 
+
+Using BLAST, you compare your DNA or protein sequence data to a known database, and the process returns a putative ID for your sequence. The uses for this are numerous, but the most basic is to figure out just what sequences you're looking at!
+
+There are two ways to use BLAST: black-box and manual operation. 
+
+Black-box refers to a 'hidden' process - here this means we simply use the NCBI website to run the data. This is very convenient for smaller datasets, or for selections of genes. It is not very efficient though - you would NEVER want to run an entire assembly through the BLAST website. 
+
+For larger datasets, you will want to download and run the software yourself. 
+
+I've provided instructions for both. 
+
+----
+
+### Instructions for the black-box method (using the website)
+
+Luckily, this is a very easy process. It is not practical for large-scale blasts. Use this if you have a few sequences to check out, but NOT if you want to ID your whole assembly - if that's your goal, it's better to run the blast locally: see the next section. 
+
+1. Start [here](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+
+You'll see a few options - what you pick depends on your data. We're going to use DNA in our example, and so we'll use **blastn**. 
+
+2. Click **blastn**
+
+3. Copy your sequence into the window, or upload a fasta file in the "enter query sequence" box.
+
+4. Choose your search set in the next box. NCBI's "non-redundant" database is actively modified and maintained, and is a great starting point. 
+
+5. You may also narrow down your search by choosing a family or species - this can make your search much faster. 
+
+6. The remaining options are for advanced runs - you don't need to worry about those for now. Just click BLAST. 
 
 ----
 
@@ -52,16 +83,13 @@ nohup nice ~/Path/To/Blast_program_files/blastx -db ~/Path/To/database.fasta -qu
 
 ----
 
-### Instruction for the black-box method
+### Selecting an arbitrary number of sequences from a fasta file
 
-Today, we're going to use blast on an arbitrary selection of our assembled data so that we can get a feel for what kind of output the program can provide, and to take a look at the identity of some of our assembled contigs. We'll start with a single sequence, and see where we can get!
+This is an example of a very powerful language called awk - the following line allows you to arbitratily select a number of sequences from the top of a fasta file. 
 
-Later in the course (after some further analysis) we'll choose more specific blast targets. For example:  
-  - Highest expressing (via kallisto expression data) 
-  - Specific orthogroups (via Orthofinder)
-  - etc...
+Originally, I tabbed this out for use with an exercise with blast, but we're no longer going to use it. That said, I wanted to leave it up because it's a useful example for those of you interested in more advanced coding. 
 
-Without further ado, let's try it out!
+Awk is fantastic. 
 
 ```
 awk "/^>/ {n++} n>10 {exit} {print}" assembly_file.fasta > sample_file.fasta
@@ -76,5 +104,3 @@ Our script consists of 3 such statements:
 2. n>$NSEQS {exit} aborts processing once the counter reaches the desired number of sequences.
 
 3. {print} is an action without a pattern (and thus matching every line), which prints every line of the input until the script is aborted by exit.
-
-> ADD: Using the website
