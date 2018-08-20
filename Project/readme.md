@@ -27,11 +27,8 @@ Steps:
 
 You can do this in your text editor, OR you can use bash commands. The file MUST look like this though - if it's in the wrong format, the rest of this won't work. 
 
-### Use all commands on each of the three TransDecoder files. Use the same ogmod.txt file each time.
-
 The spaces are very important, so if you need to, copy/paste the line code after `$` ONE AT A TIME into bash. You can't do them all at once.
  
-
 Remember, `#` means I (Charlie) am talking to you. 
 
 The `$` means "this is code to use", but make sure you don't copy the `$` in.
