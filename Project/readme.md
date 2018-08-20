@@ -85,7 +85,7 @@ $ less ogmod.txt
 
 ## Use bash commands to extract Protein data from TransDecoder output
 
-You will have 1 ogmod.txt file, and 3 TransDecoder ORF files (for 3 species) - the following lines must be called for each species. 
+You will have 1 ogmod.txt file, and 3 TransDecoder ORF files (for 3 species) - the following lines must be called for all 3 species' files. 
 
 **The bash commands**
 
