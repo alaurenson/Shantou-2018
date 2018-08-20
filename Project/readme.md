@@ -1,3 +1,25 @@
+# The Final Project
+
+We're going to do some analysis on 3 assembled datasets 
+
+Your species are Amphidinium klebsii, Tetraselmis suecica, and Gyrodinium instriatum. Thanks Mario for the first two!
+
+I have already done the following steps:
+
+1. Trim/QC
+2. Assembly
+3. TransDecoder (to predict open reading frames)
+4. OrthoFinder (to identify Orthologues between the three species)
+
+I'll provide everything you need, and I want each team to do the following:
+
+1. Take an orthogroup and identify the genes involved using blastp 
+2. Research their set of genes and come up with a detailed description of the pathway(s) involved - how do these pertain to the actual physiology of the organism?
+3. Do a multiple sequence alignment of their genes, and produce a gene tree. 
+4. **If there's time**, I may add an additional section to examine expression data - how much were these genes expressed? 
+
+Please ask me for help if you get stuck, that's why I'm here!
+
 ## Use OrthoFinder output to select an Orthogroup
 
 1. I will provide each team with an "Orthogroup" file (which was the result of using OrthoFinder to detect orthologous sequence in the three species)
@@ -116,20 +138,22 @@ MINTKNKKNKKKKKRKVKGKVVAMAKGSQIFVKDLEGRWHCLQFVSSCVSGSELKERLESSLGVPAGIQRLVTGTREVEN
 ...
 ``` 
 
-Using NCBI blastp, identify the genes from your Orthogroup. 
+**Using [NCBI blastp](https://blast.ncbi.nlm.nih.gov/Blast.cgi), identify the genes from your Orthogroup.** 
 
-You may simply copy/paste the sequence into the query window on the blast website. 
+You may simply copy/paste the sequences into the query window on the blast website.  
 
 Remember, I want you to do this for all three species!
 
 Set the following options:
-
-> Database: "UniprotKB/Swiss-Prot(swissprot)"
-> Algorithm: blastp
+- Database: "UniprotKB/Swiss-Prot(swissprot)"
+- Algorithm: blastp
 
 Download the highest scoring blast alignment each time, so that you can compare them all at the end!
 
 I want you to research the gene/genes you've identified, and then describe how those genes pertain to the in-vivo physiology of the organisms.
+
+**Note:** If your sequences are returning no significant matches, then I picked a bad orthogroup - I chose randomly, and I haven't balsted these myself, so I don't know what you're getting. Tell me and I'll give you a new one. 
+
 
 ## Do a Multiple Sequence Alignment with MUSCLE
 
@@ -139,17 +163,19 @@ First we need to concatenate our _orthos.pep.fasta files!
 $ cat species_1_orthos.pep.fasta species_2_orthos.pep.fasta species_3_orthos.pep.fasta > allspecs_orthos.pep.fasta
 ```
 
-Then, go to the [MUSCLE](https://www.ebi.ac.uk/Tools/msa/muscle/) site and use the 'upload' button to add the allspecs_orthos.pep.fasta file.
+1. Go to the [MUSCLE](https://www.ebi.ac.uk/Tools/msa/muscle/) site and use the 'upload' button to add the allspecs_orthos.pep.fasta file.
 
-Use ClustalW format in step 2.
+2. Don't change anything, use ClustalW format
 
-Submit in step 3. 
+3. Submit 
 
-- Explore the output, download the alignment and the resulting phylogenetic tree. 
+Explore the output, download the alignment and the resulting phylogenetic tree. 
 
-### Extra: Kallisto data? Plot a histogram of relative expression for each gene.  
+----
+
+## Extra: Kallisto data? Plot a histogram of relative expression for each gene.  
 
 If I think that there will be time for this, I'll update this section. 
  
-
+This is probably going to happen - so be ready. 
  
