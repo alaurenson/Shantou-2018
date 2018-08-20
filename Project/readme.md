@@ -26,7 +26,7 @@ Steps:
 - Remove all spaces and columns
 
 
-You can do this in your text editor, OR you can use bash commands. THe file MUST look like this though.  
+You can do this in your text editor, OR you can use bash commands. The file MUST look like this though - if it's in the wrong format, the rest of this won't work. 
 
 **The bash commands**
 ```
