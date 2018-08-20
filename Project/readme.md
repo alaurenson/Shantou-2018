@@ -20,9 +20,21 @@ I'll provide everything you need, and I want each team to do the following:
 
 Please ask me for help if you get stuck, that's why I'm here!
 
-## Use OrthoFinder output to select an Orthogroup
+## Download and unzip the [Project_Data]() directory to your desktop
 
-1. I will provide each team with an "Orthogroup" file (which was the result of using OrthoFinder to detect orthologous sequence in the three species)
+1. Follow the link and click download.
+
+2. Unzip it. Either by right-clicking or in your terminal with bash:
+```
+$ cd /mnt/c/Users/<your user name>/Desktop/
+$ unzip Project_Data
+```
+
+## Select your [Orthogroup]() file, download it into the Project_Data directory
+
+1. I will tell each team which "Orthogroup" file to use
+
+(This was the result of using OrthoFinder to detect orthologous sequence in the three species)
 
 ## Use bash to modify the file
 
@@ -33,6 +45,8 @@ $ ls ogroup.txt
 
 OG0000034       CA_NODE_20152_length_1893_cov_93.633621_g13266_i0.p1    CL_NODE_6803_length_2874_cov_53458231_g4381_i0, CL_NODE_6820_length_2871_cov_53514820_g4381_i1, CL_NODE_6925_length_2854_cov_53837771_g4381_i2, CL_NODE_6989_length_2842_cov_54069162_g4381_i3, ...
 ```
+
+This file contains the **names** of contigs in a given orthogroup, as determined by OrthoFinder.
 
 2. We need to modify the file so that it looks like this:
 ```
@@ -62,77 +76,80 @@ The `$` means "this is code to use", but make sure you don't copy the `$` in.
 # Do these commands EXACTLY, copy/paste if you're unsure!
 # I want you to use 'less' so that you can see the changes that are being made.
 
-$ sed 's/  */ /g' ogroup.txt > ogmod.txt
+$ sed 's/  */ /g' ogroup.txt > og_mod.txt
 
-$ less ogmod.txt
+$ less og_mod.txt
 
-$ sed -i 's/ /,/g' ogmod.txt
+$ sed -i 's/ /,/g' og_mod.txt
 
-$ less ogmod.txt
+$ less og_mod.txt
 
-$ sed -i 's/,,/,/g' ogmod.txt
+$ sed -i 's/,,/,/g' og_mod.txt
 
-$ less ogmod.txt
+$ less og_mod.txt
 
-$ sed -i 's/,/\n/g' ogmod.txt
+$ sed -i 's/,/\n/g' og_mod.txt
 
-$ less ogmod.txt
+$ less og_mod.txt
 
-$ sed -i 's/ //g' ogmod.txt
+$ sed -i 's/ //g' og_mod.txt
 
-$ less ogmod.txt
+$ less og_mod.txt
 ```
 
 ## Use bash commands to extract Protein data from TransDecoder output
 
-You will have 1 ogmod.txt file, and 3 TransDecoder ORF files (for 3 species) - the following lines must be called for all 3 species' files. 
+The TransDecoder output files are fasta-format protein sequence files, which were generated from the assemblies of each species. 
+
+You will have 1 og_mod.txt file, and 3 TransDecoder ORF files (for 3 species) - the following lines must be called for all 3 species' files. 
 
 **The bash commands**
 
-**Do these 9 commands for each TransDecoder file - you will need to modify "species_1..." to "species_2..." and "species_3..." - you can do this simply by changing the number!**
+**Do these 9 commands for each TransDecoder file - you will need to modify "Akle..." to "Gins_C1..." and "Tsue..."**
 
 ```
 # Ask me if you need help!
 # Again, I want you to use 'less' to see what changes are happening
 
-$ less species_1_TD_output.fasta
+$ less Akle.pep.fasta
 
 # This line formats the TD output file so that the text 'wraps', which means the sequence is on one line
-$ sed -e 's/\(^>.*$\)/#\1#/' species_1_TD_output.pep.fasta | tr -d "\r" | tr -d "\n" | sed -e 's/$/#/' | tr "#" "\n" | sed -e '/^$/d' > species_1_oneline.pep.fasta
+$ sed -e 's/\(^>.*$\)/#\1#/' Akle.pep.fasta | tr -d "\r" | tr -d "\n" | sed -e 's/$/#/' | tr "#" "\n" | sed -e '/^$/d' > Akle_oneline.pep.fasta
 
-$ less species_1_oneline.pep.fasta
+$ less Akle_oneline.pep.fasta
 
 # This command searches for sequences matching the IDs in ogmod.txt
-$ grep -F -A 1 -f 'ogmod.txt' 'species_1_oneline.pep.fasta' > species_1_orthos.pep.fasta
+$ grep -F -A 1 -f 'og_mod.txt' 'Akle_oneline.pep.fasta' > Akle_ortho_seqs.pep.fasta
 
-$ less species_1_orthos.pep.fasta
+$ less Akle_ortho_seqs.pep.fasta
 
 # Remove some extra spaces
-$ sed -i 's/ //g' species_1_orthos.pep.fasta
+$ sed -i 's/ //g' Akle_ortho_seqs.pep.fasta
 
-$ less species_1_orthos.pep.fasta
+$ less Akle_ortho_seqs.pep.fasta
 
 # Remove '--' lines
-$ sed -i 's/--//g' species_1_orthos.pep.fasta
+$ sed -i 's/--//g' Akle_ortho_seqs.pep.fasta
 
-$ less species_1_orthos.pep.fasta
+$ less Akle_ortho_seqs.pep.fasta
 
 # Remove '*' characters
-$ sed -i 's/*//g' species_1_orthos.pep.fasta
+$ sed -i 's/*//g' Akle_ortho_seqs.pep.fasta
 
-$ less species_1_orthos.pep.fasta
+$ less Akle_ortho_seqs.pep.fasta
 ```
 
 ## Blast Protein data to ID; describe how the genes function in vivo
 
-View each _orthos.pep.fasta file using `less` - they'll look like this:
-```
-$ ls species_1_orthos.pep.fasta
+View each ortho.pep.fasta file using `less` - they'll look something like this:
 
->CL_NODE_6803_length_2874_cov_53458231_g4381_i0Telomere_Sde2_2|PF13297.5|2.8e-24
+```
+$ ls Akle_ortho.pep.fasta
+
+>NODE_6803_length_2874_cov_53458231_g4381_i0Telomere_Sde2_2|PF13297.5|2.8e-24
 MAKGSQIFVKDLEGRWHCLQFVSSCVSGSELKERLESSLGVPAGIQRLVTGTREVENETLLVGSDDMCDNDEELGYGGGGGFYDDDEELGYGGGGFGPVLLPSCTLLLRLLGGKGGFGSLLRGAATKAGQKKTTNFDACRDMSGRRLRHVNAEKKLKEWQRDGKQRELEKAALQFLRKTERERTVEVGRNVDLAKLREESAEARDMVVDAVASGLEAAKENKRRQRMENAAKEQAGEGSPKRIRMLEMLEAVEESDEEDSEYKEHEDKSDGAGTSGSAGSEDEGSGYNSSPRGPLGDGPFASSPAQSTDGSRGESHEEGGVYSSQRLSTGAESGGVEPVADNCAVITIAHDVCEGGSGHSAGEDASNRSPSLPSDNPSALKDRRGVNSVATGSGCINGHSSSASVAEKSMSGTSSPISVDASISADGESLCFGNFNSAKDLEVLGLDRLKAELQKRGLKCGGSLEERAARLFLLKLTPLNKLDKKHFARPLVKKG*
 
->CL_NODE_6820_length_2871_cov_53514820_g4381_i1Telomere_Sde2_2|PF13297.5|3e-24
+>NODE_6820_length_2871_cov_53514820_g4381_i1Telomere_Sde2_2|PF13297.5|3e-24
 MINTKNKKNKKKKKRKVKGKVVAMAKGSQIFVKDLEGRWHCLQFVSSCVSGSELKERLESSLGVPAGIQRLVTGTREVENETLLVGSDDMCDNDEELGYGGGGGFYDDDEELGYGGGGFGPVLLPSCTLLLRLLGGKGGFGSLLRGAATKAGQKKTTNFDACRDMSGRRLRHVNAEKKLKEWQRDGKQRELEKAALQFLRKTERERTVEVGRNVDLAKLREESAEARDMVVDAVASGLEAAKENKRRQRMENAAKEQAGEGSPKRIRMLEMLEAVEESDEEDSEYKEHEDKSDGAGTSGSAGSEDEGSGYNSSPRGPLGDGPFASSPAQSTDGSRGESHEEGGVYSSQRLSTGAESGGVEPVADNCAVITIAHDVCEGGSGHSAGEDASNRSPSLPSDNPSALKDRRGVNSVATGSGCINGHSSSASVAEKSMSGTSSPISVDASISADGESLCFGNFNSAKDLEVLGLDRLKAELQKRGLKCGGSLEERAARLFLLKLTPLNKLDKKHFARPLVKKG*
 
 ...
@@ -157,13 +174,13 @@ I want you to research the gene/genes you've identified, and then describe how t
 
 ## Do a Multiple Sequence Alignment with MUSCLE
 
-First we need to concatenate our _orthos.pep.fasta files!
+First we need to concatenate our ortho.pep.fasta files!
 
 ```
-$ cat species_1_orthos.pep.fasta species_2_orthos.pep.fasta species_3_orthos.pep.fasta > allspecs_orthos.pep.fasta
+$ cat Akle_ortho.pep.fasta Gins_C1_ortho.pep.fasta Tsue_ortho.pep.fasta > all_orthos.pep.fasta
 ```
 
-1. Go to the [MUSCLE](https://www.ebi.ac.uk/Tools/msa/muscle/) site and use the 'upload' button to add the allspecs_orthos.pep.fasta file.
+1. Go to the [MUSCLE](https://www.ebi.ac.uk/Tools/msa/muscle/) site and use the 'upload' button to add the all_orthos.pep.fasta file.
 
 2. Don't change anything, use ClustalW format
 
