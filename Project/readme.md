@@ -9,7 +9,7 @@
 ```
 $ ls ogroup.txt
 
-OG0000034       CA_NODE_20152_length_1893_cov_93.633621_g13266_i0.p1    CL_NODE_6803_length_2874_cov_53458231_g4381_i0, CL_NODE_6820_length_2871_cov_53514820_g4381_i1, CL_NODE_6925_length_2854_cov_53837771_g4381_i2, CL_NODE_6989_length_2842_cov_54069162_g4381_i3
+OG0000034       CA_NODE_20152_length_1893_cov_93.633621_g13266_i0.p1    CL_NODE_6803_length_2874_cov_53458231_g4381_i0, CL_NODE_6820_length_2871_cov_53514820_g4381_i1, CL_NODE_6925_length_2854_cov_53837771_g4381_i2, CL_NODE_6989_length_2842_cov_54069162_g4381_i3, ...
 ```
 
 2. We need to modify the file so that it looks like this:
@@ -29,9 +29,17 @@ You can do this in your text editor, OR you can use bash commands. The file MUST
 
 ### Use all commands on each of the three TransDecoder files. Use the same ogmod.txt file each time.
 
+The spaces are very important, so if you need to, copy/paste the line code after `$` ONE AT A TIME into bash. You can't do them all at once.
+ 
+
+Remember, `#` means I (Charlie) am talking to you. 
+
+The `$` means "this is code to use", but make sure you don't copy the `$` in.
+
 **The bash commands**
 ```
 # sed is used to 'substitute'
+
 # Do these commands EXACTLY, copy/paste if you're unsure!
 # I want you to use 'less' so that you can see the changes that are being made.
 
@@ -58,20 +66,13 @@ $ less ogmod.txt
 
 ## Use bash commands to extract Protein data from TransDecoder output
 
-You will have 1 ogmod.txt file, and 3 TransDecoder ORF files (for 3 species) - the following 2 lines must be called for each species. 
-
-
+You will have 1 ogmod.txt file, and 3 TransDecoder ORF files (for 3 species) - the following lines must be called for each species. 
 
 **The bash commands**
 
-The spaces are very important, so copy/paste the line code after `$` ONE AT A TIME into bash. Make sure you don't copy the `$` in. 
-
-Remember, `#` means I (Charlie) am talking to you. 
-
-The `$` means "this is code to use"
+**Do these 9 commands for each TransDecoder file - you will need to modify "species_1..." to "species_2..." and "species_3..." - you can do this simply by changing the number!**
 
 ```
-# Do this for each TransDecoder file - you will need to modify "species_1..." to "species_2..." and "species_3..."
 # Ask me if you need help!
 # Again, I want you to use 'less' to see what changes are happening
 
@@ -95,8 +96,12 @@ $ less species_1_orthos.pep.fasta
 # Remove '--' lines
 $ sed -i 's/--//g' species_1_orthos.pep.fasta
 
+$ less species_1_orthos.pep.fasta
+
 # Remove '*' characters
-sed -i 's/*//g' species_1_orthos.pep.fasta
+$ sed -i 's/*//g' species_1_orthos.pep.fasta
+
+$ less species_1_orthos.pep.fasta
 ```
 
 ## Blast DNA and protein data to ID; describe how the genes function in vivo
@@ -143,7 +148,7 @@ Submit in step 3.
 
 - Explore the output, download the alignment and the resulting phylogenetic tree. 
 
-### Extra: Kallisto data? Plot a histogram of relative expression for each gene 
+### Extra: Kallisto data? Plot a histogram of relative expression for each gene.  
 
 If I think that there will be time for this, I'll update this section. 
  
