@@ -23,7 +23,7 @@ CL_NODE_6989_length_2842_cov_54069162_g4381_i3
 ```
 Steps:
 - Place each ID on a new line
-- Remove all spaces and columns
+- Remove all spaces and commas
 
 You can do this in your text editor, OR you can use bash commands. The file MUST look like this though - if it's in the wrong format, the rest of this won't work. 
 
