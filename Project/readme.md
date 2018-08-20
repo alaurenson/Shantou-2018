@@ -61,7 +61,14 @@ You will have 1 ogmod.txt file, and 3 TransDecoder ORF files (for 3 species) - t
 
 Use both commands on each of the three TransDecoder files. Use the same ogmod.txt file each time.
 
-**The bash commands: copy/paste these!**
+**The bash commands**
+
+The spaces are very important, so copy/paste the line code after `$` ONE AT A TIME into bash. Make sure you don't copy the `$` in. 
+
+Remember, `#` means I (Charlie) am talking to you. 
+
+The `$` means "this is code to use"
+
 ```
 # Do this for each TransDecoder file - you will need to modify "species_1..." to "species_2..." and "species_3..."
 # Ask me if you need help!
@@ -74,7 +81,7 @@ $ sed -e 's/\(^>.*$\)/#\1#/' species_1_TD_output.pep.fasta | tr -d "\r" | tr -d 
 
 $ less species_1_oneline.pep.fasta
 
-# This command searches 
+# This command searches for sequences matching the IDs in ogmod.txt
 $ grep -F -A 1 -f 'ogmod.txt' 'species_1_oneline.pep.fasta' > species_1_orthos.pep.fasta
 
 $ less species_1_orthos.pep.fasta
