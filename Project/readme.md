@@ -101,7 +101,7 @@ $ sed -i 's/*//g' species_1_orthos.pep.fasta
 $ less species_1_orthos.pep.fasta
 ```
 
-## Blast DNA and protein data to ID; describe how the genes function in vivo
+## Blast Protein data to ID; describe how the genes function in vivo
 
 View each _orthos.pep.fasta file using `less` - they'll look like this:
 ```
