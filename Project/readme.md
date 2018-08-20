@@ -1,8 +1,8 @@
-### Use OrthoFinder output to select an Orthogroup
+## Use OrthoFinder output to select an Orthogroup
 
 1. I will provide each team with an "Orthogroup" file (which was the result of using OrthoFinder to detect orthologous sequence in the three species)
 
-### Use bash to modify the file
+## Use bash to modify the file
 
 1. Navigate to that file in bash, and view it with ls
 
@@ -25,8 +25,9 @@ Steps:
 - Place each ID on a new line
 - Remove all spaces and columns
 
-
 You can do this in your text editor, OR you can use bash commands. The file MUST look like this though - if it's in the wrong format, the rest of this won't work. 
+
+### Use all commands on each of the three TransDecoder files. Use the same ogmod.txt file each time.
 
 **The bash commands**
 ```
@@ -55,11 +56,11 @@ $ sed -i 's/ //g' ogmod.txt
 $ less ogmod.txt
 ```
 
-### Use bash commands to extract Protein data from TransDecoder output
+## Use bash commands to extract Protein data from TransDecoder output
 
 You will have 1 ogmod.txt file, and 3 TransDecoder ORF files (for 3 species) - the following 2 lines must be called for each species. 
 
-Use both commands on each of the three TransDecoder files. Use the same ogmod.txt file each time.
+
 
 **The bash commands**
 
@@ -98,7 +99,7 @@ $ sed -i 's/--//g' species_1_orthos.pep.fasta
 sed -i 's/*//g' species_1_orthos.pep.fasta
 ```
 
-### Blast DNA and protein data to ID; describe how the genes function in vivo
+## Blast DNA and protein data to ID; describe how the genes function in vivo
 
 View each _orthos.pep.fasta file using `less` - they'll look like this:
 ```
@@ -126,7 +127,7 @@ Download the highest scoring blast alignment each time, so that you can compare 
 
 I want you to research the gene/genes you've identified, and then describe how those genes pertain to the in-vivo physiology of the organisms.
 
-### Do a MSA with MUSCLE
+## Do a Multiple Sequence Alignment with MUSCLE
 
 First we need to concatenate our _orthos.pep.fasta files!
 
@@ -144,6 +145,7 @@ Submit in step 3.
 
 ### Extra: Kallisto data? Plot a histogram of relative expression for each gene 
 
+If I think that there will be time for this, I'll update this section. 
  
 
  
