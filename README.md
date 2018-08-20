@@ -27,3 +27,5 @@ How do we identify open reading frames? How do we quantify expresison? Here we'l
 Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs. 
 
 ----
+
+## [The Project](https://github.com/chazgoo/Shantou-2018/tree/master/Project)
