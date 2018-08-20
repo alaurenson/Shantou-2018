@@ -24,11 +24,11 @@ When the result shows up, I want you to explore it and see what you can figure o
 
 1. Go to the [MUSCLE](https://www.ebi.ac.uk/Tools/msa/muscle/) website.
 
-2. Download [this]() sample fasta file, and upload it to MUSCLE by using the "browse" button.
+2. Download [this](https://github.com/chazgoo/Shantou-2018/blob/master/Identification/test_MSA.pep.fasta) sample fasta file, and upload it to MUSCLE by using the "browse" button.
 
 3. Use ClustalW, don't change the output format.
 
 4. Click Submit. 
 
-
+#### If you finish, I want you to BLAST the other genes in the test_MSA.pep.fasta file. 
 
