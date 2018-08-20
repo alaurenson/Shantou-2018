@@ -62,4 +62,6 @@ TransDecoder.Predict -t target_transcripts.fasta [ homology options ]
 ```
 The final set of candidate coding regions can be found as files '*.transdecoder.*' where extensions include .pep, .cds, .gff3, and .bed
 
-> Add: Running TransDecoder 
+---
+
+## [TransDecoder Manual](https://github.com/TransDecoder/TransDecoder/wiki)
