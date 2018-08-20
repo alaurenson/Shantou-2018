@@ -17,7 +17,7 @@ There are two ways to use BLAST: black-box and manual operation.
 
 Black-box refers to a 'hidden' process - here this means we simply use the NCBI website to run the data. This is very convenient for smaller datasets, or for selections of genes. It is not very efficient though - you would NEVER want to run an entire assembly through the BLAST website. 
 
-For larger datasets, you will want to download and run the software yourself. 
+For larger datasets, you will want to download and run the software yourself in your computer's terminal window using bash.  
 
 I've provided instructions for both. 
 
