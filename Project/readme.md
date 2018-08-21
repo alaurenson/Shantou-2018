@@ -41,7 +41,7 @@ $ unzip Project_Data
 1. Navigate to that file in bash, and view it with ls
 
 ```
-$ ls ogroup.txt
+$ ls ogroup_34.txt
 
 OG0000034       CA_NODE_20152_length_1893_cov_93.633621_g13266_i0.p1    CL_NODE_6803_length_2874_cov_53458231_g4381_i0, CL_NODE_6820_length_2871_cov_53514820_g4381_i1, CL_NODE_6925_length_2854_cov_53837771_g4381_i2, CL_NODE_6989_length_2842_cov_54069162_g4381_i3, ...
 ```
@@ -69,6 +69,8 @@ Remember, `#` means I (Charlie) am talking to you.
 
 The `$` means "this is code to use", but make sure you don't copy the `$` in.
 
+**NOTE: You need to modify 'ogroup_34.txt' to whatever your ogroup_# is!**
+
 **The bash commands**
 ```
 # sed is used to 'substitute'
@@ -76,32 +78,32 @@ The `$` means "this is code to use", but make sure you don't copy the `$` in.
 # Do these commands EXACTLY, copy/paste if you're unsure!
 # I want you to use 'less' so that you can see the changes that are being made.
 
-$ sed 's/  */ /g' ogroup.txt > og_mod.txt
+$ sed 's/  */ /g' ogroup_34.txt > og34_mod.txt
 
-$ less og_mod.txt
+$ less og34_mod.txt
 
-$ sed -i 's/ /,/g' og_mod.txt
+$ sed -i 's/ /,/g' og34_mod.txt
 
-$ less og_mod.txt
+$ less og34_mod.txt
 
-$ sed -i 's/,,/,/g' og_mod.txt
+$ sed -i 's/,,/,/g' og34_mod.txt
 
-$ less og_mod.txt
+$ less og34_mod.txt
 
-$ sed -i 's/,/\n/g' og_mod.txt
+$ sed -i 's/,/\n/g' og34_mod.txt
 
-$ less og_mod.txt
+$ less og34_mod.txt
 
-$ sed -i 's/ //g' og_mod.txt
+$ sed -i 's/ //g' og34_mod.txt
 
-$ less og_mod.txt
+$ less og34_mod.txt
 ```
 
 ## Use bash commands to extract Protein data from TransDecoder output
 
 The TransDecoder output files are fasta-format protein sequence files, which were generated from the assemblies of each species. 
 
-You will have 1 og_mod.txt file, and 3 TransDecoder ORF files (for 3 species) - the following lines must be called for all 3 species' files. 
+You will have 1 og_mod.txt file which you made, and 3 TransDecoder ORF files (for 3 species) which I gave you - the following lines must be called for all 3 species' files. 
 
 **The bash commands**
 
