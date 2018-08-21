@@ -32,3 +32,7 @@ When the result shows up, I want you to explore it and see what you can figure o
 
 #### If you finish, I want you to BLAST the other genes in the test_MSA.pep.fasta file. 
 
+#### If you finish that too, reade the following section:
+
+
+
