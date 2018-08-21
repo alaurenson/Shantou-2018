@@ -22,7 +22,8 @@ When the result shows up, I want you to explore it and see what you can figure o
 
 ----
 
-### Using MUSCLE
+### Using MUSCLE to do a Multiple Sequence Alignment 
+#### The output is similar to what blast looks like, except it only includes the sequences you put in - there's no database comparison.
 
 1. Go to the [MUSCLE](https://www.ebi.ac.uk/Tools/msa/muscle/) website.
 
@@ -31,6 +32,8 @@ When the result shows up, I want you to explore it and see what you can figure o
 3. Use ClustalW, don't change the output format.
 
 4. Click Submit. 
+
+5. Explore the output, look at the tree and the MSA itself - try to get a feel for what these mean!
 
 ----
 
