@@ -55,4 +55,14 @@ Our script consists of 3 such statements:
 
 3. {print} is an action without a pattern (and thus matching every line), which prints every line of the input until the script is aborted by exit.
 
-**Now, use that command to select 10 sequences from 
+**The exercise**
+
+1. Download [this](https://github.com/chazgoo/Shantou-2018/blob/master/Identification/Tsue.pep.fasta). 
+
+2. Use the above command to arbitrarily choose the top 3 sequences
+
+```
+$ awk "/^>/ {n++} n>3 {exit} {print}" Tsue.pep.fasta > Tsue.sample.fasta
+```
+
+3. BLAST it. 
