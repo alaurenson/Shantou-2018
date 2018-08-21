@@ -32,7 +32,29 @@ When the result shows up, I want you to explore it and see what you can figure o
 
 #### If you finish, I want you to BLAST the other genes in the test_MSA.pep.fasta file. 
 
-#### If you finish that too, reade the following section:
+#### If you finish that too, read the following section:
 
 
+### Selecting an arbitrary number of sequences from a fasta file
 
+This is an example of a very powerful language called awk - the following line allows you to arbitratily select a number of sequences from the top of a fasta file. 
+
+Originally, I tabbed this out for use with an exercise with blast, but we're no longer going to use it. That said, I wanted to leave it up because it's a useful example for those of you interested in more advanced coding. 
+
+Awk is fantastic. 
+
+```
+awk "/^>/ {n++} n>10 {exit} {print}" assembly_file.fasta > sample_file.fasta
+```
+
+An awk script consists of one or more statements of the form: **pattern {actions}**. The input is read line-by-line, and if the current line matches the pattern, the corresponding actions are executed.
+
+Our script consists of 3 such statements:
+
+1. /^>/ {n++} increments the counter each time a new sequence is started. /.../ denotes a regular expression pattern, and ^> is a regular expression that matches the > sign at the beginning of a line. An uninitialized variable in awk has the value 0, which is exactly what we want here. If we needed some other initial value (say, 1), we could have added a BEGIN pattern like this: BEGIN {n=1}.
+
+2. n>$NSEQS {exit} aborts processing once the counter reaches the desired number of sequences.
+
+3. {print} is an action without a pattern (and thus matching every line), which prints every line of the input until the script is aborted by exit.
+
+**Now, use that command to select 10 sequences from 
