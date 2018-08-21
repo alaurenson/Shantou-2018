@@ -39,9 +39,7 @@ When the result shows up, I want you to explore it and see what you can figure o
 
 This is an example of a very powerful language called awk - the following line allows you to arbitratily select a number of sequences from the top of a fasta file. 
 
-Originally, I tabbed this out for use with an exercise with blast, but we're no longer going to use it. That said, I wanted to leave it up because it's a useful example for those of you interested in more advanced coding. 
-
-Awk is fantastic. 
+Awk is fantastic. And hard to read.
 
 ```
 awk "/^>/ {n++} n>10 {exit} {print}" assembly_file.fasta > sample_file.fasta
