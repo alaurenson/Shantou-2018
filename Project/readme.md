@@ -30,9 +30,9 @@ $ cd /mnt/c/Users/<your user name>/Desktop/
 $ unzip Project_Data
 ```
 
-## Select your [Orthogroup](https://github.com/chazgoo/Shantou-2018/tree/master/Project/ogroups) file, copy the text into a new .txt file in the Project_Data directory.
+## Download ogroups.zip and select your [Orthogroup](https://github.com/chazgoo/Shantou-2018/tree/master/Project/ogroups.zip) file, OR copy the text into a new .txt file in the Project_Data directory.
 
-*If that isn't working, ocme to me with a USB drive and I'll copy it for you*
+*If that isn't working, come to me with a USB drive and I'll copy it for you*
 
 1. I will tell each team which "Orthogroup" file to use [here](https://github.com/chazgoo/Shantou-2018/tree/master/Project/ogroups)
 
