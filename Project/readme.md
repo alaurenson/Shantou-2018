@@ -203,11 +203,24 @@ I'm not sure if this will happen - just be ready. I'll let you know.
 
 ----
 
-## For the presentation
+# For the presentation
 
 Each group will present the findings for their othogroup, include information about the gene(s), and any figures you like (for example, the blast output, or the MUSCLE alignment/gene tree. 
 
 In addition, as Prof. Delwiche mentioned earlier, each group will be assigned 1 step of the pipeline to present as well. For each, I will try to provide a link with resources for you to start. 
 
+**Groups**
 
- 
+1. Valentina, Satheeswaran, Ashurini, Ruiping, Deng -  
+
+2. Yan Zhang, Yang Shu, Yu Pei, Cheowen Zheng, Suhong Bao - 
+
+3. Cong Zhou, Xuyang Wang, Weifang Zhu, Xiaohui Pan, Zhu Liu, Xue Xue Cao -  
+
+4. Nattiwong Pankasem, Sakura Nakagawa, Hazel Chou, Lingyu Li, Daniel Kurpan - 
+
+5. Cao Wang, Yu Fengchun, Sun Siqi, Huang Nan, Xie Xi Hui -  
+
+6. Arif Harun, Amyra Kamaruzzan, Zuliza Ochi, Zulaikha Deris, Natalie Dunn, Amber Gray, Qianhui Zhang - 
+
+7. Maria, Sikandar, Ran - 
