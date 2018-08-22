@@ -211,16 +211,22 @@ In addition, as Prof. Delwiche mentioned earlier, each group will be assigned 1 
 
 **Groups**
 
-1. Valentina, Satheeswaran, Ashurini, Ruiping, Deng - Detecting orthologues [**OrthoFinder**](https://github.com/davidemms/OrthoFinder)
+1. Valentina, Satheeswaran, Ashurini, Ruiping, Deng 
+- Detecting orthologues [**OrthoFinder**](https://github.com/davidemms/OrthoFinder)
 
-2. Yan Zhang, Yang Shu, Yu Pei, Cheowen Zheng, Suhong Bao - Trimming raw data [**BBduk**](https://sourceforge.net/projects/bbmap/)
+2. Yan Zhang, Yang Shu, Yu Pei, Cheowen Zheng, Suhong Bao 
+- Trimming raw data [**BBduk**](https://sourceforge.net/projects/bbmap/)
 
-3. Cong Zhou, Xuyang Wang, Weifang Zhu, Xiaohui Pan, Zhu Liu, Xue Xue Cao - Sequencing [**Illumina**](https://www.illumina.com/techniques/sequencing.html) 
+3. Cong Zhou, Xuyang Wang, Weifang Zhu, Xiaohui Pan, Zhu Liu, Xue Xue Cao 
+- Sequencing [**Illumina**](https://www.illumina.com/techniques/sequencing.html) 
 
-4. Nattiwong Pankasem, Sakura Nakagawa, Hazel Chou, Lingyu Li, Daniel Kurpan - Assembling raw data [**RNAspades**](http://cab.spbu.ru/software/rnaspades/)
+4. Nattiwong Pankasem, Sakura Nakagawa, Hazel Chou, Lingyu Li, Daniel Kurpan 
+- Assembling raw data [**RNAspades**](http://cab.spbu.ru/software/rnaspades/)
 
-5. Cao Wang, Yu Fengchun, Sun Siqi, Huang Nan, Xie Xi Hui - Assesing sequence quality [**FastQC**](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) 
+5. Cao Wang, Yu Fengchun, Sun Siqi, Huang Nan, Xie Xi Hui 
+- Assesing sequence quality [**FastQC**](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) 
 
-6. Arif Harun, Amyra Kamaruzzan, Zuliza Ochi, Zulaikha Deris, Natalie Dunn, Amber Gray, Qianhui Zhang - Predicting open reading frames / peptide sequence [**TransDecoder**](https://github.com/TransDecoder/TransDecoder)
+6. Arif Harun, Amyra Kamaruzzan, Zuliza Ochi, Zulaikha Deris, Natalie Dunn, Amber Gray, Qianhui Zhang 
+- Predicting open reading frames / peptide sequence [**TransDecoder**](https://github.com/TransDecoder/TransDecoder)
 
 7. Maria, Sikandar, Ran - Identifying genes [**BLAST**](https://blast.ncbi.nlm.nih.gov/Blast.cgi) 
