@@ -101,6 +101,8 @@ $ sed -i 's/ //g' og34_mod.txt
 $ less og34_mod.txt
 ```
 
+**Make sure your og_mod.txt file is in the Project_Data directory for the next part!**
+
 ## Use bash commands to extract Protein data from TransDecoder output
 
 The TransDecoder output files are fasta-format protein sequence files, which were generated from the assemblies of each species. 
@@ -122,7 +124,7 @@ $ sed -e 's/\(^>.*$\)/#\1#/' Akle.pep.fasta | tr -d "\r" | tr -d "\n" | sed -e '
 
 $ less Akle_oneline.pep.fasta
 
-# This command searches for sequences matching the IDs in ogmod.txt
+# This command searches for sequences matching the IDs in ogmod.txt - make sure you modify "og_mod" to YOUR filename
 $ grep -F -A 1 -f 'og_mod.txt' 'Akle_oneline.pep.fasta' > Akle_ortho_seqs.pep.fasta
 
 $ less Akle_ortho_seqs.pep.fasta
