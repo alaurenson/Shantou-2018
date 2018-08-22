@@ -16,7 +16,7 @@ You may either copy the text in your file to your computer (and save as a .txt f
 
 6. Arif Harun, Amyra Kamaruzzan, Zuliza Ochi, Zulaikha Deris, Natalie Dunn, Amber Gray, Qianhui Zhang - **oroup_98.txt** & **ogroup 100.txt** (You all have a big group - divide these up) 
 
-7. Maria, Sikandar, Ran - **ogroup_99.txt) 
+7. Maria, Sikandar, Ran - **ogroup_99.txt** 
 
 ----
 
