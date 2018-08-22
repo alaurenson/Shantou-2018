@@ -38,7 +38,7 @@ $ unzip Project_Data
 
 (This was the result of using OrthoFinder to detect orthologous sequence in the three species)
 
-## Use bash to modify the file
+## Use bash to modify the ogroup_#.txt file
 
 1. Navigate to that file in bash, and view it with ls
 
@@ -63,7 +63,7 @@ Steps:
 - Place each ID on a new line
 - Remove all spaces and commas
 
-You can do this in your text editor, OR you can use bash commands. The file MUST look like this though - if it's in the wrong format, the rest of this won't work. 
+You can do this in a text editor (word, notepad, etc...), OR you can use bash commands. The file MUST look like this though - if it's in the wrong format, the rest of this won't work. 
 
 The spaces are very important, so if you need to, copy/paste the line code after `$` ONE AT A TIME into bash. You can't do them all at once.
  
@@ -199,6 +199,15 @@ Explore the output, download the alignment and the resulting phylogenetic tree.
 ## Extra: Kallisto data? Plot a histogram of relative expression for each gene.  
 
 If I think that there will be time for this, I'll update this section. 
- 
-This is probably going to happen - so be ready. 
+I'm not sure if this will happen - just be ready. I'll let you know. 
+
+----
+
+## For the presentation
+
+Each group will present the findings for their othogroup, include information about the gene(s), and any figures you like (for example, the blast output, or the MUSCLE alignment/gene tree. 
+
+In addition, as Prof. Delwiche mentioned earlier, each group will be assigned 1 step of the pipeline to present as well. For each, I will try to provide a link with resources for you to start. 
+
+
  
