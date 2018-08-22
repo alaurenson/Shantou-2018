@@ -211,16 +211,16 @@ In addition, as Prof. Delwiche mentioned earlier, each group will be assigned 1 
 
 **Groups**
 
-1. Valentina, Satheeswaran, Ashurini, Ruiping, Deng -  
+1. Valentina, Satheeswaran, Ashurini, Ruiping, Deng - [**OrthoFinder**](https://github.com/davidemms/OrthoFinder)
 
-2. Yan Zhang, Yang Shu, Yu Pei, Cheowen Zheng, Suhong Bao - 
+2. Yan Zhang, Yang Shu, Yu Pei, Cheowen Zheng, Suhong Bao - [**BBduk**](https://sourceforge.net/projects/bbmap/)
 
-3. Cong Zhou, Xuyang Wang, Weifang Zhu, Xiaohui Pan, Zhu Liu, Xue Xue Cao -  
+3. Cong Zhou, Xuyang Wang, Weifang Zhu, Xiaohui Pan, Zhu Liu, Xue Xue Cao - Sequencing [**Illumina**] 
 
-4. Nattiwong Pankasem, Sakura Nakagawa, Hazel Chou, Lingyu Li, Daniel Kurpan - 
+4. Nattiwong Pankasem, Sakura Nakagawa, Hazel Chou, Lingyu Li, Daniel Kurpan - [**RNAspades**](http://cab.spbu.ru/software/rnaspades/)
 
-5. Cao Wang, Yu Fengchun, Sun Siqi, Huang Nan, Xie Xi Hui -  
+5. Cao Wang, Yu Fengchun, Sun Siqi, Huang Nan, Xie Xi Hui - [**FastQC**](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) 
 
-6. Arif Harun, Amyra Kamaruzzan, Zuliza Ochi, Zulaikha Deris, Natalie Dunn, Amber Gray, Qianhui Zhang - 
+6. Arif Harun, Amyra Kamaruzzan, Zuliza Ochi, Zulaikha Deris, Natalie Dunn, Amber Gray, Qianhui Zhang - [**TransDecoder**](https://github.com/TransDecoder/TransDecoder)
 
-7. Maria, Sikandar, Ran - 
+7. Maria, Sikandar, Ran - [**BLAST**](https://blast.ncbi.nlm.nih.gov/Blast.cgi) 
