@@ -30,9 +30,11 @@ $ cd /mnt/c/Users/<your user name>/Desktop/
 $ unzip Project_Data
 ```
 
-## Select your [Orthogroup]() file, download it into the Project_Data directory
+## Select your [Orthogroup]() file, copy the text into a new .txt file in the Project_Data directory.
 
-1. I will tell each team which "Orthogroup" file to use
+*If that isn't working, ocme to me with a USB drive and I'll copy it for you*
+
+1. I will tell each team which "Orthogroup" file to use [here]()
 
 (This was the result of using OrthoFinder to detect orthologous sequence in the three species)
 
