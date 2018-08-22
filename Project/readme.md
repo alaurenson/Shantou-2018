@@ -20,7 +20,7 @@ I'll provide everything you need, and I want each team to do the following:
 
 Please ask me for help if you get stuck, that's why I'm here!
 
-## Download and unzip the [Project_Data](https://github.com/chazgoo/Shantou-2018/tree/master/Project/Project_Data) directory to your desktop
+## Download and unzip the [Project_Data](https://github.com/chazgoo/Shantou-2018/blob/master/Project/Project_Data.zip) directory to your desktop
 
 1. Follow the link and click download.
 
