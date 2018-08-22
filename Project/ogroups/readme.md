@@ -1,6 +1,8 @@
 ### OrthoGroup assignments
 
-Right-click the link of your file above to download. 
+You may either copy the text in your file to your computer (and save as a .txt file), or you may bring a USB drive to me and get a copy. 
+
+----
 
 1. Valentina, Satheeswaran, Ashurini, Ruiping, Deng - **ogroup_83.txt** 
 
@@ -16,7 +18,10 @@ Right-click the link of your file above to download.
 
 7. Maria, Sikandar, Ran - **ogroup_99.txt) 
 
+----
+
 Extras (in case your orthogroup isn't returning a clear result with BLAST)
+
 103 
 106 
 108
