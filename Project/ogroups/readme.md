@@ -1,6 +1,6 @@
 ### OrthoGroup assignments
 
-You may either download the .zip file, copy the text in your file to your computer (and save as a .txt file), or you may bring a USB drive to me and get a copy. 
+You may either download the [.zip file](https://github.com/chazgoo/Shantou-2018/blob/master/Project/ogroups.zip), copy the text in your file to your computer (and save as a .txt file), or you may bring a USB drive to me and get a copy. 
 
 ----
 
