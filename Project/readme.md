@@ -20,7 +20,7 @@ I'll provide everything you need, and I want each team to do the following:
 
 Please ask me for help if you get stuck, that's why I'm here!
 
-## Download and unzip the [Project_Data]() directory to your desktop
+## Download and unzip the [Project_Data](https://github.com/chazgoo/Shantou-2018/tree/master/Project/Project_Data) directory to your desktop
 
 1. Follow the link and click download.
 
@@ -30,11 +30,11 @@ $ cd /mnt/c/Users/<your user name>/Desktop/
 $ unzip Project_Data
 ```
 
-## Select your [Orthogroup]() file, copy the text into a new .txt file in the Project_Data directory.
+## Select your [Orthogroup](https://github.com/chazgoo/Shantou-2018/tree/master/Project/ogroups) file, copy the text into a new .txt file in the Project_Data directory.
 
 *If that isn't working, ocme to me with a USB drive and I'll copy it for you*
 
-1. I will tell each team which "Orthogroup" file to use [here]()
+1. I will tell each team which "Orthogroup" file to use [here](https://github.com/chazgoo/Shantou-2018/tree/master/Project/ogroups)
 
 (This was the result of using OrthoFinder to detect orthologous sequence in the three species)
 
