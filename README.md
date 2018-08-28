@@ -1,4 +1,4 @@
-# Algal Phylogenetics
+# JARC: Bioinformatics
 #### Shantou University - Summer 2018
 
 ----
