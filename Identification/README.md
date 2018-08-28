@@ -45,6 +45,8 @@ You'll see a few options - what you pick depends on your data. We're going to us
 
 ### Installation and Instruction for Manual Opperation
 
+(From [The NCBI BLAST manual](https://www.ncbi.nlm.nih.gov/books/NBK1762/))
+
 *I'm including this for your future perusal! In class we'll actually be using the black-box method.* 
 
 NCBI BLAST and its several variants are available in the repositories from most Linux distributions and so can be installed in the same way as any other package. For example, on Ubuntu, Debian, Linux Mint:
