@@ -1,4 +1,4 @@
-# JARC: Bioinformatics
+# JARC: Bioinformatics Primer
 #### Shantou University - Summer 2018
 
 ----
