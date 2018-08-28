@@ -23,14 +23,14 @@ How do we identify open reading frames? How do we quantify expresison? Here we'l
 Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs. 
 
 ----
+## 6. [The Project](https://github.com/chazgoo/Shantou-2018/tree/master/Project)
+
+----
 ## Exercises
 
 - **[Day 2: BASH](https://github.com/chazgoo/Shantou-2018/blob/master/UNIX/bash/day2bash.md)**
 - **[Day 4: Assembly data in R](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly/Day_4_demo)**
 - **[Day 6: BLAST and MUSCLE](https://github.com/chazgoo/Shantou-2018/blob/master/Identification/blastdemo.md)**
-
-----
-## [The Project](https://github.com/chazgoo/Shantou-2018/tree/master/Project)
 
 ----
 
