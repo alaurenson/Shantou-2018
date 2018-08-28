@@ -23,11 +23,11 @@ How do we identify open reading frames? How do we quantify expresison? Here we'l
 Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs. 
 
 ----
-## 6. [The Project](https://github.com/chazgoo/Shantou-2018/tree/master/Project)
+### 6. [The Project](https://github.com/chazgoo/Shantou-2018/tree/master/Project)
 Bring together some key concepts in post-assembly analysis. 
 
 ----
-## Exercises
+### Exercises
 
 - **[Day 2: BASH](https://github.com/chazgoo/Shantou-2018/blob/master/UNIX/bash/day2bash.md)**
 - **[Day 4: Assembly data in R](https://github.com/chazgoo/Shantou-2018/tree/master/Assembly/Day_4_demo)**
