@@ -24,6 +24,7 @@ Species relationships vs. gene relationships: Orthologs, Paralogs, Xenologs.
 
 ----
 ## 6. [The Project](https://github.com/chazgoo/Shantou-2018/tree/master/Project)
+Bring together some key concepts in post-assembly analysis. 
 
 ----
 ## Exercises
