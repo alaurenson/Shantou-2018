@@ -1,3 +1,9 @@
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">JARC: Bioinformatics Primer </span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/chazgoo/Shantou-2018" property="cc:attributionName" rel="cc:attributionURL">Charles A. Goodman</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+[![DOI](https://zenodo.org/badge/139986971.svg)](https://zenodo.org/badge/latestdoi/139986971)
+
+----
 # JARC: Bioinformatics Primer
 #### Shantou University - Summer 2018
 
@@ -33,7 +39,3 @@ Bring together some key concepts in post-assembly analysis.
 - **[Day 6: BLAST and MUSCLE](https://github.com/chazgoo/Shantou-2018/blob/master/Identification/blastdemo.md)**
 
 ----
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">JARC: Bioinformatics Primer </span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/chazgoo/Shantou-2018" property="cc:attributionName" rel="cc:attributionURL">Charles A. Goodman</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-[![DOI](https://zenodo.org/badge/139986971.svg)](https://zenodo.org/badge/latestdoi/139986971)
